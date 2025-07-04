@@ -2,7 +2,7 @@
 
 This repository implements a **six-agent LLM pipeline** for **Conversational Financial Question Answering (ConvFinQA)** over SEC filings. It combines specialized agents for data extraction, numerical reasoning, validation, and answer synthesis, all orchestrated and benchmarked via a reproducible tracking framework.
 
-## 🚀 Project Highlights
+## Project Highlights
 
 - **Problem Addressed**: Multi-turn dialogues requiring table lookups, coreference resolution, and arithmetic across financial tables and narrative text.
 - **Approach**: A configurable, six-tier agent system:
@@ -14,7 +14,7 @@ This repository implements a **six-agent LLM pipeline** for **Conversational Fin
 - **Benchmarking & Tracking**: Automated experiments with detailed logs in `experiment_tracking/`, enabling side-by-side comparison and rollback.
 - **Interactive Tools**: CLI chat interface, Streamlit dashboard, and Jupyter notebooks for exploration and analysis.
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```
 ConvFinQA/
@@ -30,7 +30,7 @@ ConvFinQA/
 └── dataset.md                 # Detailed dataset specification
 ```
 
-## 🔧 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Python 3.12+
@@ -65,7 +65,7 @@ ConvFinQA/
    }
    ```
 
-## 🎯 Usage
+## Usage
 
 - **Chat via CLI**:
   ```bash
@@ -84,7 +84,7 @@ ConvFinQA/
   jupyter lab notebooks/
   ```
 
-## 📖 Detailed Documentation
+## Detailed Documentation
 
 - `dataset.md` — ConvFinQA dataset details
 - `docs/CODE_STRUCTURE.md` — Code organization guide
@@ -92,11 +92,11 @@ ConvFinQA/
 - `docs/ENHANCED_TRACKING.md` — Experiment tracking and metadata
 - `docs/THREE_AGENT_APPROACH.md`, `docs/FOUR_AGENT_APPROACH.md` — Historical system designs
 
-## 🤝 Contributing
+## Contributing
 
 Contributions and feedback are welcome! Please open an issue or submit a pull request. For major changes, start a discussion via an issue.
 
-## 🛡️ Security & Secrets
+## Security & Secrets
 
 - **Do not commit** any secrets or API keys. Use `config/api_keys.json` (ignored by Git) for credentials.
 - The repository is protected by secret-scanning rules to prevent accidental leaks. 
