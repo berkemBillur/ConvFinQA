@@ -1,0 +1,5 @@
+# Ignore configuration files with potential secrets
+config/api_keys.json
+
+# Ignore experiment tracking snapshots containing secrets
+experiment_tracking/configurations/snapshots.json 
