@@ -1,0 +1,101 @@
+ConvFinQA CrewAI Benchmark - Passed Results
+================================================================================
+
+1. Record: Single_AMT/2005/page_105.pdf-4, Turn 0/2
+Question: "what was the total value of net operating loss carryforwards?"
+Expected: 4575515.0
+CrewAI Prediction: 4575515.0
+Status: ✓ CORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 4.2s
+Estimated Cost: $0.0042
+Configuration: three_agent_paper_v1_3895141946789287539
+Confidence: 1.000
+DSL Program: 
+Operation: lookup
+--------------------------------------------------------------------------------
+
+2. Record: Single_AMT/2005/page_105.pdf-4, Turn 1/2
+Question: "and how much do the net operating loss carryforwards related to state represent in relation to this total?"
+Expected: 0.52847
+CrewAI Prediction: 0.5284
+Status: ✓ CORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 11.0s
+Estimated Cost: $0.0132
+Configuration: three_agent_paper_v1_3895141946789287539
+Confidence: 1.000
+DSL Program: 
+Operation: lookup
+--------------------------------------------------------------------------------
+
+3. Record: Single_PM/2018/page_24.pdf-3, Turn 0/2
+Question: "what is the net change in the price for pmi common stock from 2013 to 2018?"
+Expected: -3.5
+CrewAI Prediction: -3.5
+Status: ✓ CORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 4.5s
+Estimated Cost: $0.0045
+Configuration: three_agent_paper_v1_3895141946789287539
+Confidence: 1.000
+DSL Program: 
+Operation: calculation
+--------------------------------------------------------------------------------
+
+4. Record: Single_PM/2018/page_24.pdf-3, Turn 1/2
+Question: "what is that change over 100?"
+Expected: -0.035
+CrewAI Prediction: -0.035
+Status: ✓ CORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 12.7s
+Estimated Cost: $0.0127
+Configuration: three_agent_paper_v1_3895141946789287539
+Confidence: 1.000
+DSL Program: 
+Operation: calculation
+--------------------------------------------------------------------------------
+
+5. Record: Double_PM/2017/page_38.pdf, Turn 0/7
+Question: "what was, in millions, the operating income in 2017?"
+Expected: 11503.0
+CrewAI Prediction: 11503.0
+Status: ✓ CORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 2.9s
+Estimated Cost: $0.0029
+Configuration: three_agent_paper_v1_3895141946789287539
+Confidence: 1.000
+DSL Program: 
+Operation: lookup
+--------------------------------------------------------------------------------
+
+6. Record: Double_PM/2017/page_38.pdf, Turn 1/7
+Question: "and what was it in 2016?"
+Expected: 10815.0
+CrewAI Prediction: 10815.0
+Status: ✓ CORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 2.9s
+Estimated Cost: $0.0029
+Configuration: three_agent_paper_v1_3895141946789287539
+Confidence: 1.000
+DSL Program: 
+Operation: lookup
+--------------------------------------------------------------------------------
+
+7. Record: Double_PM/2017/page_38.pdf, Turn 2/7
+Question: "what was, then, the change over the year, in millions?"
+Expected: 688.0
+CrewAI Prediction: 688.0
+Status: ✓ CORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 3.8s
+Estimated Cost: $0.0050
+Configuration: three_agent_paper_v1_3895141946789287539
+Confidence: 1.000
+DSL Program: 
+Operation: calculation
+--------------------------------------------------------------------------------
+

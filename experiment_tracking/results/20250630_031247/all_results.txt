@@ -1,0 +1,202 @@
+13/14 questions correctly predicted
+Accuracy rate: 92.9%
+
+ConvFinQA CrewAI Benchmark - All Results
+================================================================================
+
+1. Record: Single_AAP/2012/page_12.pdf-2, Turn 0/5
+Question: "what were the number of stores at the end of 2011?"
+Expected: 3460.0
+CrewAI Prediction: 3460.0
+Status: ✓ CORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 3.7s
+Estimated Cost: $0.0037
+Configuration: three_agent_paper_v1_1706815668585954386
+Confidence: 1.000
+DSL Program: 
+Operation: other
+--------------------------------------------------------------------------------
+
+2. Record: Single_AAP/2012/page_12.pdf-2, Turn 1/5
+Question: "what was the number at the start of 2011?"
+Expected: 3369.0
+CrewAI Prediction: 3369.0
+Status: ✓ CORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 3.6s
+Estimated Cost: $0.0036
+Configuration: three_agent_paper_v1_1706815668585954386
+Confidence: 1.000
+DSL Program: 
+Operation: lookup
+--------------------------------------------------------------------------------
+
+3. Record: Single_AAP/2012/page_12.pdf-2, Turn 2/5
+Question: "what is the net change?"
+Expected: 91.0
+CrewAI Prediction: 91.0
+Status: ✓ CORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 5.2s
+Estimated Cost: $0.0052
+Configuration: three_agent_paper_v1_1706815668585954386
+Confidence: 1.000
+DSL Program: 
+Operation: calculation
+--------------------------------------------------------------------------------
+
+4. Record: Single_AAP/2012/page_12.pdf-2, Turn 3/5
+Question: "what was the number at the start of 2011?"
+Expected: 3369.0
+CrewAI Prediction: 3369.0
+Status: ✓ CORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 3.8s
+Estimated Cost: $0.0038
+Configuration: three_agent_paper_v1_1706815668585954386
+Confidence: 1.000
+DSL Program: 
+Operation: lookup
+--------------------------------------------------------------------------------
+
+5. Record: Single_AAP/2012/page_12.pdf-2, Turn 4/5
+Question: "what is the net change divided by the beginning 2011 number?"
+Expected: 0.02701
+CrewAI Prediction: 0.027002675
+Status: ✓ CORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 10.1s
+Estimated Cost: $0.0101
+Configuration: three_agent_paper_v1_1706815668585954386
+Confidence: 1.000
+DSL Program: 
+Operation: calculation
+--------------------------------------------------------------------------------
+
+6. Record: Double_EW/2016/page_79.pdf, Turn 0/4
+Question: "what is the amount of the goodwill?"
+Expected: 258.9
+CrewAI Prediction: 258.9
+Status: ✓ CORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 3.3s
+Estimated Cost: $0.0033
+Configuration: three_agent_paper_v1_1706815668585954386
+Confidence: 1.000
+DSL Program: 
+Operation: lookup
+--------------------------------------------------------------------------------
+
+7. Record: Double_EW/2016/page_79.pdf, Turn 1/4
+Question: "and what is the total cash purchase price net of cash acquired?"
+Expected: 320.1
+CrewAI Prediction: 320.1
+Status: ✓ CORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 3.0s
+Estimated Cost: $0.0030
+Configuration: three_agent_paper_v1_1706815668585954386
+Confidence: 1.000
+DSL Program: 
+Operation: lookup
+--------------------------------------------------------------------------------
+
+8. Record: Double_EW/2016/page_79.pdf, Turn 2/4
+Question: "what percentage, then, does that amount represent in relation to this purchase price?"
+Expected: 0.80881
+CrewAI Prediction: 0.8088091229
+Status: ✓ CORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 3.5s
+Estimated Cost: $0.0045
+Configuration: three_agent_paper_v1_1706815668585954386
+Confidence: 1.000
+DSL Program: 
+Operation: percentage
+--------------------------------------------------------------------------------
+
+9. Record: Double_EW/2016/page_79.pdf, Turn 3/4
+Question: "and concerning that goodwill, what percentage does it represent in relation to the current assets?"
+Expected: 9.21352
+CrewAI Prediction: N/A
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 11.7s
+Estimated Cost: $0.0117
+Configuration: three_agent_paper_v1_1706815668585954386
+Confidence: 1.000
+DSL Program: 
+Operation: percentage
+--------------------------------------------------------------------------------
+
+10. Record: Single_ETFC/2014/page_26.pdf-4, Turn 0/5
+Question: "what is the price of e*trade financial corporation in 2014 less an initial 100?"
+Expected: 37.81
+CrewAI Prediction: 37.81
+Status: ✓ CORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 4.0s
+Estimated Cost: $0.0061
+Configuration: three_agent_paper_v1_1706815668585954386
+Confidence: 1.000
+DSL Program: 
+Operation: lookup
+--------------------------------------------------------------------------------
+
+11. Record: Single_ETFC/2014/page_26.pdf-4, Turn 1/5
+Question: "what is that divided by 100?"
+Expected: 0.3781
+CrewAI Prediction: 0.3781
+Status: ✓ CORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 3.4s
+Estimated Cost: $0.0034
+Configuration: three_agent_paper_v1_1706815668585954386
+Confidence: 1.000
+DSL Program: 
+Operation: lookup
+--------------------------------------------------------------------------------
+
+12. Record: Single_ETFC/2014/page_26.pdf-4, Turn 2/5
+Question: "what is the price of the s&p 500 index in 2014 less and initial 100?"
+Expected: 105.14
+CrewAI Prediction: 105.14
+Status: ✓ CORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 4.4s
+Estimated Cost: $0.0044
+Configuration: three_agent_paper_v1_1706815668585954386
+Confidence: 1.000
+DSL Program: 
+Operation: lookup
+--------------------------------------------------------------------------------
+
+13. Record: Single_ETFC/2014/page_26.pdf-4, Turn 3/5
+Question: "what is that divided by 100?"
+Expected: 1.0514
+CrewAI Prediction: 1.0514
+Status: ✓ CORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 12.2s
+Estimated Cost: $0.0122
+Configuration: three_agent_paper_v1_1706815668585954386
+Confidence: 1.000
+DSL Program: 
+Operation: lookup
+--------------------------------------------------------------------------------
+
+14. Record: Single_ETFC/2014/page_26.pdf-4, Turn 4/5
+Question: "what is the difference of the e*trade percent change and the s&p percent change?"
+Expected: -0.6733
+CrewAI Prediction: -0.6733
+Status: ✓ CORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 5.4s
+Estimated Cost: $0.0054
+Configuration: three_agent_paper_v1_1706815668585954386
+Confidence: 1.000
+DSL Program: 
+Operation: calculation
+--------------------------------------------------------------------------------
+

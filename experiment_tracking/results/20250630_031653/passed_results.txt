@@ -1,0 +1,227 @@
+ConvFinQA CrewAI Benchmark - Passed Results
+================================================================================
+
+1. Record: Double_MAS/2018/page_60.pdf, Turn 3/4
+Question: "what portion of the revised purchase price is dedicated to goodwill?"
+Expected: 0.11658
+CrewAI Prediction: 0.11657559198542805
+Status: ✓ CORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 4.4s
+Estimated Cost: $0.0044
+Configuration: three_agent_paper_v1_1859206111614672394
+Confidence: 1.000
+DSL Program: 
+Operation: other
+--------------------------------------------------------------------------------
+
+2. Record: Single_UPS/2006/page_32.pdf-1, Turn 0/3
+Question: "what was the return for united parcel service inc . in 2006?"
+Expected: 148.92
+CrewAI Prediction: 148.92
+Status: ✓ CORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 8.6s
+Estimated Cost: $0.0086
+Configuration: three_agent_paper_v1_1859206111614672394
+Confidence: 1.000
+DSL Program: 
+Operation: lookup
+--------------------------------------------------------------------------------
+
+3. Record: Single_UPS/2006/page_32.pdf-1, Turn 1/3
+Question: "and what was the change in that return from 2001 to 2006?"
+Expected: 48.92
+CrewAI Prediction: 48.92
+Status: ✓ CORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 3.2s
+Estimated Cost: $0.0032
+Configuration: three_agent_paper_v1_1859206111614672394
+Confidence: 1.000
+DSL Program: 
+Operation: calculation
+--------------------------------------------------------------------------------
+
+4. Record: Single_UPS/2006/page_32.pdf-1, Turn 2/3
+Question: "how much, then, does that change represent in relation to the return of that stock in 2001, in percentage?"
+Expected: 0.4892
+CrewAI Prediction: 0.4892
+Status: ✓ CORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 15.7s
+Estimated Cost: $0.0244
+Configuration: three_agent_paper_v1_1859206111614672394
+Confidence: 1.000
+DSL Program: 
+Operation: calculation
+--------------------------------------------------------------------------------
+
+5. Record: Double_GPN/2009/page_70.pdf, Turn 0/4
+Question: "in the year of 2008, what were the preliminary purchase price allocations related to contract-based intangible assets, in thousands?"
+Expected: 1031.0
+CrewAI Prediction: 1031.0
+Status: ✓ CORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 5.9s
+Estimated Cost: $0.0071
+Configuration: three_agent_paper_v1_1859206111614672394
+Confidence: 1.000
+DSL Program: 
+Operation: other
+--------------------------------------------------------------------------------
+
+6. Record: Double_GPN/2009/page_70.pdf, Turn 2/4
+Question: "and concerning the total assets in that same acquisition, what amount of them was due to goodwill?"
+Expected: 13536.0
+CrewAI Prediction: 13536.0
+Status: ✓ CORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 7.1s
+Estimated Cost: $0.0071
+Configuration: three_agent_paper_v1_1859206111614672394
+Confidence: 1.000
+DSL Program: 
+Operation: other
+--------------------------------------------------------------------------------
+
+7. Record: Double_GPN/2009/page_70.pdf, Turn 3/4
+Question: "what percentage, then, did the goodwill represent in relation to them?"
+Expected: 0.69676
+CrewAI Prediction: 0.6968
+Status: ✓ CORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 8.5s
+Estimated Cost: $0.0110
+Configuration: three_agent_paper_v1_1859206111614672394
+Confidence: 1.000
+DSL Program: 
+Operation: percentage
+--------------------------------------------------------------------------------
+
+8. Record: Single_AAP/2011/page_28.pdf-2, Turn 0/2
+Question: "what is the value of the s&p 500 index on january 3, 2009 less it at the end of 2006?"
+Expected: -34.3
+CrewAI Prediction: -34.3
+Status: ✓ CORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 7.7s
+Estimated Cost: $0.0077
+Configuration: three_agent_paper_v1_1859206111614672394
+Confidence: 1.000
+DSL Program: 
+Operation: lookup
+--------------------------------------------------------------------------------
+
+9. Record: Single_AAP/2011/page_28.pdf-2, Turn 1/2
+Question: "what is that divided by 100?"
+Expected: -0.343
+CrewAI Prediction: -0.343
+Status: ✓ CORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 17.2s
+Estimated Cost: $0.0172
+Configuration: three_agent_paper_v1_1859206111614672394
+Confidence: 1.000
+DSL Program: 
+Operation: lookup
+--------------------------------------------------------------------------------
+
+10. Record: Single_UNP/2014/page_35.pdf-4, Turn 0/4
+Question: "what was the cash by operating activities for 2014?"
+Expected: 7385.0
+CrewAI Prediction: 7385.0
+Status: ✓ CORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 5.6s
+Estimated Cost: $0.0056
+Configuration: three_agent_paper_v1_1859206111614672394
+Confidence: 1.000
+DSL Program: 
+Operation: lookup
+--------------------------------------------------------------------------------
+
+11. Record: Single_UNP/2014/page_35.pdf-4, Turn 3/4
+Question: "and the percentage change over this time?"
+Expected: 0.08237
+CrewAI Prediction: 0.08220000000000001
+Status: ✓ CORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 15.5s
+Estimated Cost: $0.0155
+Configuration: three_agent_paper_v1_1859206111614672394
+Confidence: 1.000
+DSL Program: 
+Operation: calculation
+--------------------------------------------------------------------------------
+
+12. Record: Single_ADI/2011/page_50.pdf-1, Turn 0/2
+Question: "what is the net change fair value of forward exchange contracts asset from 2010 to 2011?"
+Expected: -4784.0
+CrewAI Prediction: -4784.0
+Status: ✓ CORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 7.9s
+Estimated Cost: $0.0079
+Configuration: three_agent_paper_v1_1859206111614672394
+Confidence: 1.000
+DSL Program: 
+Operation: calculation
+--------------------------------------------------------------------------------
+
+13. Record: Single_ADI/2011/page_50.pdf-1, Turn 1/2
+Question: "what percentage change does this represent?"
+Expected: -0.65932
+CrewAI Prediction: -0.6594488188976377
+Status: ✓ CORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 18.5s
+Estimated Cost: $0.0185
+Configuration: three_agent_paper_v1_1859206111614672394
+Confidence: 1.000
+DSL Program: 
+Operation: calculation
+--------------------------------------------------------------------------------
+
+14. Record: Single_TSCO/2017/page_31.pdf-1, Turn 0/4
+Question: "what is the price of tractor supply company in 2013?"
+Expected: 174.14
+CrewAI Prediction: 174.14
+Status: ✓ CORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 6.6s
+Estimated Cost: $0.0066
+Configuration: three_agent_paper_v1_1859206111614672394
+Confidence: 1.000
+DSL Program: 
+Operation: lookup
+--------------------------------------------------------------------------------
+
+15. Record: Single_TSCO/2017/page_31.pdf-1, Turn 1/4
+Question: "what is the price in 2012?"
+Expected: 100.0
+CrewAI Prediction: 100.0
+Status: ✓ CORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 7.3s
+Estimated Cost: $0.0073
+Configuration: three_agent_paper_v1_1859206111614672394
+Confidence: 1.000
+DSL Program: 
+Operation: lookup
+--------------------------------------------------------------------------------
+
+16. Record: Double_AES/2015/page_117.pdf, Turn 0/2
+Question: "what percentage did the change in the proportional free cash flow from 2008 to 2009 represent in relation to that cash in 2008?"
+Expected: -0.29898
+CrewAI Prediction: -0.299055071
+Status: ✓ CORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 21.1s
+Estimated Cost: $0.0253
+Configuration: three_agent_paper_v1_1859206111614672394
+Confidence: 1.000
+DSL Program: 
+Operation: calculation
+--------------------------------------------------------------------------------
+

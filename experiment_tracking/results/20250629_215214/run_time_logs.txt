@@ -1,0 +1,328 @@
+📝 Command output will be saved to: experiment_tracking/results/20250629_215214/run_time_logs.txt
+[36m╭─[0m[36m────────────────────────────────────────────[0m[36m Crew Execution Started [0m[36m────────────────────────────────────────────[0m[36m─╮[0m
+[36m│[0m                                                                                                                  [36m│[0m
+[36m│[0m  [1;36mCrew Execution Started[0m                                                                                          [36m│[0m
+[36m│[0m  [37mName: [0m[36mcrew[0m                                                                                                      [36m│[0m
+[36m│[0m  [37mID: [0m[36m81bdb002-70ac-4069-80bc-06748459ee09[0m                                                                        [36m│[0m
+[36m│[0m  [37mTool Args: [0m                                                                                                     [36m│[0m
+[36m│[0m                                                                                                                  [36m│[0m
+[36m│[0m                                                                                                                  [36m│[0m
+[36m╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯[0m
+
+[?25l[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: afa0dd13-b8fd-481d-9d61-3151fa59ce18[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+[?25h[35m╭─[0m[35m───────────────────────────────────────────────[0m[35m 🤖 Agent Started [0m[35m───────────────────────────────────────────────[0m[35m─╮[0m
+[35m│[0m                                                                                                                  [35m│[0m
+[35m│[0m  [37mAgent: [0m[1;92mFinancial Analysis Expert[0m                                                                                [35m│[0m
+[35m│[0m                                                                                                                  [35m│[0m
+[35m│[0m  [37mTask: [0m                                                                                                          [35m│[0m
+[35m│[0m  [92mFINANCIAL ANALYSIS EXPERT TASK - Unified Extraction and Calculation[0m                                             [35m│[0m
+[35m│[0m                                                                                                                  [35m│[0m
+[35m│[0m                                                                                                                  [35m│[0m
+[35m│[0m                                                                                                                  [35m│[0m
+[35m│[0m  [92mQUESTION: "what was the total value of net operating loss carryforwards?"[0m                                       [35m│[0m
+[35m│[0m                                                                                                                  [35m│[0m
+[35m│[0m  [92mCONVERSATION HISTORY:[0m                                                                                           [35m│[0m
+[35m│[0m  [92mNo previous turns.[0m                                                                                              [35m│[0m
+[35m│[0m                                                                                                                  [35m│[0m
+[35m│[0m  [92mFINANCIAL DOCUMENT:[0m                                                                                             [35m│[0m
+[35m│[0m  [92mPRE-TEXT:[0m                                                                                                       [35m│[0m
+[35m│[0m  [92mamerican tower corporation and subsidiaries notes to consolidated financial statements 2014 ( continued ) at [0m   [35m│[0m
+[35m│[0m  [92mdecember 31 , 2005 , the company had net federal and state operating loss carryforwards available to reduce [0m    [35m│[0m
+[35m│[0m  [92mfuture taxable income of approximately $ 2.2 billion and $ 2.4 billion , respectively . if not utilized , the [0m  [35m│[0m
+[35m│[0m  [92mcompany 2019s net operating loss carryforwards expire as follows ( in tho...[0m                                    [35m│[0m
+[35m│[0m                                                                                                                  [35m│[0m
+[35m│[0m  [92mTABLE:[0m                                                                                                          [35m│[0m
+[35m│[0m  [92mRow Label       [0m[92mfederal [0m[92mstate[0m                                                                                   [35m│[0m
+[35m│[0m  [92m2006 to 2010    [0m[92m5248.0  [0m[92m469747.0[0m                                                                                [35m│[0m
+[35m│[0m  [92m2011 to 2015    [0m[92m10012.0 [0m[92m272662.0[0m                                                                                [35m│[0m
+[35m│[0m  [92m2016 to 2020    [0m[92m397691.0        [0m[92m777707.0[0m                                                                        [35m│[0m
+[35m│[0m  [92m2021 to 2025    [0m[92m1744552.0       [0m[92m897896.0[0m                                                                        [35m│[0m
+[35m│[0m  [92mtotal   [0m[92m2157503.0       [0m[92m2418012.0[0m                                                                               [35m│[0m
+[35m│[0m                                                                                                                  [35m│[0m
+[35m│[0m  [92mANALYSIS STRATEGY:[0m                                                                                              [35m│[0m
+[35m│[0m                                                                                                                  [35m│[0m
+[35m│[0m  [92mSTEP 1 - UNDERSTAND THE QUESTION:[0m                                                                               [35m│[0m
+[35m│[0m  [92m- What specific metric is being asked for?[0m                                                                      [35m│[0m
+[35m│[0m  [92m- What time periods are involved?[0m                                                                               [35m│[0m
+[35m│[0m  [92m- Are there conversational references to resolve?[0m                                                               [35m│[0m
+[35m│[0m  [92m- What type of calculation is needed (lookup, change, ratio, percentage)?[0m                                       [35m│[0m
+[35m│[0m                                                                                                                  [35m│[0m
+[35m│[0m  [92mSTEP 2 - RESOLVE CONVERSATIONAL CONTEXT:[0m                                                                        [35m│[0m
+[35m│[0m  [92m- If question contains "that", "it", "this value" → use the most recent result from conversation history[0m        [35m│[0m
+[35m│[0m  [92m- Example: Previous answer was 78.93, question asks "what is that divided by 100?" → use 78.93[0m                  [35m│[0m
+[35m│[0m  [92m- "the previous year" → identify specific year from context[0m                                                     [35m│[0m
+[35m│[0m  [92m- "the difference between the two values" → use the two most recently mentioned values[0m                          [35m│[0m
+[35m│[0m                                                                                                                  [35m│[0m
+[35m│[0m  [92mSTEP 3 - DATA EXTRACTION:[0m                                                                                       [35m│[0m
+[35m│[0m  [92m- Scan the ENTIRE table systematically (all rows, all columns)[0m                                                  [35m│[0m
+[35m│[0m  [92m- Look for EXACT metric name matches first, then synonyms[0m                                                       [35m│[0m
+[35m│[0m  [92m- When you see years (2012, 2014), distinguish:[0m                                                                 [35m│[0m
+[35m│[0m  [92m  * Column headers (time periods) vs actual numeric values[0m                                                      [35m│[0m
+[35m│[0m  [92m  * Don't confuse year labels with the data values[0m                                                              [35m│[0m
+[35m│[0m  [92m- For ambiguous cases, choose the value that makes business sense for the question[0m                              [35m│[0m
+[35m│[0m                                                                                                                  [35m│[0m
+[35m│[0m  [92mSTEP 4 - CALCULATION:[0m                                                                                           [35m│[0m
+[35m│[0m  [92m- Percentage change: (new - old) / old[0m                                                                          [35m│[0m
+[35m│[0m  [92m- Differences: pay attention to order ("change from A to B" = B - A)[0m                                            [35m│[0m
+[35m│[0m  [92m- Ratios: check question for correct numerator/denominator[0m                                                      [35m│[0m
+[35m│[0m  [92m- Preserve negative signs for declines, losses, decreases[0m                                                       [35m│[0m
+[35m│[0m                                                                                                                  [35m│[0m
+[35m│[0m  [92mSTEP 5 - VERIFICATION:[0m                                                                                          [35m│[0m
+[35m│[0m  [92m- Does the result magnitude make sense?[0m                                                                         [35m│[0m
+[35m│[0m  [92m- Are signs correct (positive/negative)?[0m                                                                        [35m│[0m
+[35m│[0m  [92m- Is the scale appropriate?[0m                                                                                     [35m│[0m
+[35m│[0m                                                                                                                  [35m│[0m
+[35m│[0m  [92mCOMMON ERROR PATTERNS TO AVOID:[0m                                                                                 [35m│[0m
+[35m│[0m  [92m- Don't return years (2012, 2014) when asked for financial values[0m                                               [35m│[0m
+[35m│[0m  [92m- Don't lose negative signs in calculations[0m                                                                     [35m│[0m
+[35m│[0m  [92m- Don't confuse different metrics (net earnings ≠ operating income)[0m                                             [35m│[0m
+[35m│[0m  [92m- Don't ignore conversational context ("that" refers to previous result)[0m                                        [35m│[0m
+[35m│[0m                                                                                                                  [35m│[0m
+[35m│[0m                                                                                                                  [35m│[0m
+[35m╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯[0m
+
+[?25l
+[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: afa0dd13-b8fd-481d-9d61-3151fa59ce18[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: afa0dd13-b8fd-481d-9d61-3151fa59ce18[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2KLiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: afa0dd13-b8fd-481d-9d61-3151fa59ce18[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K
+[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: afa0dd13-b8fd-481d-9d61-3151fa59ce18[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: afa0dd13-b8fd-481d-9d61-3151fa59ce18[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;31m❌ LLM Failed[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: afa0dd13-b8fd-481d-9d61-3151fa59ce18[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;31m❌ LLM Failed[0m
+[?25h[31m╭─[0m[31m──────────────────────────────────────────────────[0m[31m LLM Error [0m[31m───────────────────────────────────────────────────[0m[31m─╮[0m
+[31m│[0m                                                                                                                  [31m│[0m
+[31m│[0m  [1;31m❌ LLM Call Failed[0m                                                                                              [31m│[0m
+[31m│[0m  [37mError: [0m[31mlitellm.AuthenticationError: AuthenticationError: OpenAIException - The api_key client option must be [0m   [31m│[0m
+[31m│[0m  [31mset either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable[0m               [31m│[0m
+[31m│[0m                                                                                                                  [31m│[0m
+[31m╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯[0m
+
+ERROR:root:LiteLLM call failed: litellm.AuthenticationError: AuthenticationError: OpenAIException - The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+[91m Error during LLM call: litellm.AuthenticationError: AuthenticationError: OpenAIException - The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable[00m
+[91m An unknown error occurred. Please check the details below.[00m
+[91m Error details: litellm.AuthenticationError: AuthenticationError: OpenAIException - The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable[00m
+[?25l[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;31m📋 Task: afa0dd13-b8fd-481d-9d61-3151fa59ce18[0m
+    [37mAssigned to: [0m[31mFinancial Analysis Expert[0m
+    [37mStatus: [0m[1;31m❌ Failed[0m
+    └── [1;31m❌ LLM Failed[0m
+[?25h[31m╭─[0m[31m─────────────────────────────────────────────────[0m[31m Task Failure [0m[31m─────────────────────────────────────────────────[0m[31m─╮[0m
+[31m│[0m                                                                                                                  [31m│[0m
+[31m│[0m  [1;31mTask Failed[0m                                                                                                     [31m│[0m
+[31m│[0m  [37mName: [0m[31mafa0dd13-b8fd-481d-9d61-3151fa59ce18[0m                                                                      [31m│[0m
+[31m│[0m  [37mAgent: [0m[31mFinancial Analysis Expert[0m                                                                                [31m│[0m
+[31m│[0m  [37mTool Args: [0m                                                                                                     [31m│[0m
+[31m│[0m                                                                                                                  [31m│[0m
+[31m│[0m                                                                                                                  [31m│[0m
+[31m╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯[0m
+
+[31m╭─[0m[31m─────────────────────────────────────────────────[0m[31m Crew Failure [0m[31m─────────────────────────────────────────────────[0m[31m─╮[0m
+[31m│[0m                                                                                                                  [31m│[0m
+[31m│[0m  [1;31mCrew Execution Failed[0m                                                                                           [31m│[0m
+[31m│[0m  [37mName: [0m[31mcrew[0m                                                                                                      [31m│[0m
+[31m│[0m  [37mID: [0m[31m81bdb002-70ac-4069-80bc-06748459ee09[0m                                                                        [31m│[0m
+[31m│[0m  [37mTool Args: [0m                                                                                                     [31m│[0m
+[31m│[0m  [37mFinal Output: [0m                                                                                                  [31m│[0m
+[31m│[0m                                                                                                                  [31m│[0m
+[31m│[0m                                                                                                                  [31m│[0m
+[31m╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯[0m
+
+[36m╭─[0m[36m────────────────────────────────────────────[0m[36m Crew Execution Started [0m[36m────────────────────────────────────────────[0m[36m─╮[0m
+[36m│[0m                                                                                                                  [36m│[0m
+[36m│[0m  [1;36mCrew Execution Started[0m                                                                                          [36m│[0m
+[36m│[0m  [37mName: [0m[36mcrew[0m                                                                                                      [36m│[0m
+[36m│[0m  [37mID: [0m[36mf4639bbd-aa0b-42b8-b292-ad04bc0bb1d3[0m                                                                        [36m│[0m
+[36m│[0m  [37mTool Args: [0m                                                                                                     [36m│[0m
+[36m│[0m                                                                                                                  [36m│[0m
+[36m│[0m                                                                                                                  [36m│[0m
+[36m╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯[0m
+
+[?25l[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a0e879bf-efe2-491d-aea4-ab175022e94a[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+[?25h[35m╭─[0m[35m───────────────────────────────────────────────[0m[35m 🤖 Agent Started [0m[35m───────────────────────────────────────────────[0m[35m─╮[0m
+[35m│[0m                                                                                                                  [35m│[0m
+[35m│[0m  [37mAgent: [0m[1;92mFinancial Analysis Expert[0m                                                                                [35m│[0m
+[35m│[0m                                                                                                                  [35m│[0m
+[35m│[0m  [37mTask: [0m                                                                                                          [35m│[0m
+[35m│[0m  [92mFINANCIAL ANALYSIS EXPERT TASK - Unified Extraction and Calculation[0m                                             [35m│[0m
+[35m│[0m                                                                                                                  [35m│[0m
+[35m│[0m                                                                                                                  [35m│[0m
+[35m│[0m                                                                                                                  [35m│[0m
+[35m│[0m  [92mQUESTION: "and how much do the net operating loss carryforwards related to state represent in relation to this[0m  [35m│[0m
+[35m│[0m  [92mtotal?"[0m                                                                                                         [35m│[0m
+[35m│[0m                                                                                                                  [35m│[0m
+[35m│[0m  [92mCONVERSATION HISTORY:[0m                                                                                           [35m│[0m
+[35m│[0m  [92mNo previous turns.[0m                                                                                              [35m│[0m
+[35m│[0m                                                                                                                  [35m│[0m
+[35m│[0m  [92mFINANCIAL DOCUMENT:[0m                                                                                             [35m│[0m
+[35m│[0m  [92mPRE-TEXT:[0m                                                                                                       [35m│[0m
+[35m│[0m  [92mamerican tower corporation and subsidiaries notes to consolidated financial statements 2014 ( continued ) at [0m   [35m│[0m
+[35m│[0m  [92mdecember 31 , 2005 , the company had net federal and state operating loss carryforwards available to reduce [0m    [35m│[0m
+[35m│[0m  [92mfuture taxable income of approximately $ 2.2 billion and $ 2.4 billion , respectively . if not utilized , the [0m  [35m│[0m
+[35m│[0m  [92mcompany 2019s net operating loss carryforwards expire as follows ( in tho...[0m                                    [35m│[0m
+[35m│[0m                                                                                                                  [35m│[0m
+[35m│[0m  [92mTABLE:[0m                                                                                                          [35m│[0m
+[35m│[0m  [92mRow Label       [0m[92mfederal [0m[92mstate[0m                                                                                   [35m│[0m
+[35m│[0m  [92m2006 to 2010    [0m[92m5248.0  [0m[92m469747.0[0m                                                                                [35m│[0m
+[35m│[0m  [92m2011 to 2015    [0m[92m10012.0 [0m[92m272662.0[0m                                                                                [35m│[0m
+[35m│[0m  [92m2016 to 2020    [0m[92m397691.0        [0m[92m777707.0[0m                                                                        [35m│[0m
+[35m│[0m  [92m2021 to 2025    [0m[92m1744552.0       [0m[92m897896.0[0m                                                                        [35m│[0m
+[35m│[0m  [92mtotal   [0m[92m2157503.0       [0m[92m2418012.0[0m                                                                               [35m│[0m
+[35m│[0m                                                                                                                  [35m│[0m
+[35m│[0m  [92mANALYSIS STRATEGY:[0m                                                                                              [35m│[0m
+[35m│[0m                                                                                                                  [35m│[0m
+[35m│[0m  [92mSTEP 1 - UNDERSTAND THE QUESTION:[0m                                                                               [35m│[0m
+[35m│[0m  [92m- What specific metric is being asked for?[0m                                                                      [35m│[0m
+[35m│[0m  [92m- What time periods are involved?[0m                                                                               [35m│[0m
+[35m│[0m  [92m- Are there conversational references to resolve?[0m                                                               [35m│[0m
+[35m│[0m  [92m- What type of calculation is needed (lookup, change, ratio, percentage)?[0m                                       [35m│[0m
+[35m│[0m                                                                                                                  [35m│[0m
+[35m│[0m  [92mSTEP 2 - RESOLVE CONVERSATIONAL CONTEXT:[0m                                                                        [35m│[0m
+[35m│[0m  [92m- If question contains "that", "it", "this value" → use the most recent result from conversation history[0m        [35m│[0m
+[35m│[0m  [92m- Example: Previous answer was 78.93, question asks "what is that divided by 100?" → use 78.93[0m                  [35m│[0m
+[35m│[0m  [92m- "the previous year" → identify specific year from context[0m                                                     [35m│[0m
+[35m│[0m  [92m- "the difference between the two values" → use the two most recently mentioned values[0m                          [35m│[0m
+[35m│[0m                                                                                                                  [35m│[0m
+[35m│[0m  [92mSTEP 3 - DATA EXTRACTION:[0m                                                                                       [35m│[0m
+[35m│[0m  [92m- Scan the ENTIRE table systematically (all rows, all columns)[0m                                                  [35m│[0m
+[35m│[0m  [92m- Look for EXACT metric name matches first, then synonyms[0m                                                       [35m│[0m
+[35m│[0m  [92m- When you see years (2012, 2014), distinguish:[0m                                                                 [35m│[0m
+[35m│[0m  [92m  * Column headers (time periods) vs actual numeric values[0m                                                      [35m│[0m
+[35m│[0m  [92m  * Don't confuse year labels with the data values[0m                                                              [35m│[0m
+[35m│[0m  [92m- For ambiguous cases, choose the value that makes business sense for the question[0m                              [35m│[0m
+[35m│[0m                                                                                                                  [35m│[0m
+[35m│[0m  [92mSTEP 4 - CALCULATION:[0m                                                                                           [35m│[0m
+[35m│[0m  [92m- Percentage change: (new - old) / old[0m                                                                          [35m│[0m
+[35m│[0m  [92m- Differences: pay attention to order ("change from A to B" = B - A)[0m                                            [35m│[0m
+[35m│[0m  [92m- Ratios: check question for correct numerator/denominator[0m                                                      [35m│[0m
+[35m│[0m  [92m- Preserve negative signs for declines, losses, decreases[0m                                                       [35m│[0m
+[35m│[0m                                                                                                                  [35m│[0m
+[35m│[0m  [92mSTEP 5 - VERIFICATION:[0m                                                                                          [35m│[0m
+[35m│[0m  [92m- Does the result magnitude make sense?[0m                                                                         [35m│[0m
+[35m│[0m  [92m- Are signs correct (positive/negative)?[0m                                                                        [35m│[0m
+[35m│[0m  [92m- Is the scale appropriate?[0m                                                                                     [35m│[0m
+[35m│[0m                                                                                                                  [35m│[0m
+[35m│[0m  [92mCOMMON ERROR PATTERNS TO AVOID:[0m                                                                                 [35m│[0m
+[35m│[0m  [92m- Don't return years (2012, 2014) when asked for financial values[0m                                               [35m│[0m
+[35m│[0m  [92m- Don't lose negative signs in calculations[0m                                                                     [35m│[0m
+[35m│[0m  [92m- Don't confuse different metrics (net earnings ≠ operating income)[0m                                             [35m│[0m
+[35m│[0m  [92m- Don't ignore conversational context ("that" refers to previous result)[0m                                        [35m│[0m
+[35m│[0m                                                                                                                  [35m│[0m
+[35m│[0m                                                                                                                  [35m│[0m
+[35m╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯[0m
+
+[?25l
+[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a0e879bf-efe2-491d-aea4-ab175022e94a[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;31mGive Feedback / Get Help: https://github.com/BerriAI/litellm/issues/new[0m
+[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a0e879bf-efe2-491d-aea4-ab175022e94a[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2KLiteLLM.Info: If you need to debug this error, use `litellm._turn_on_debug()'.
+[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a0e879bf-efe2-491d-aea4-ab175022e94a[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K
+[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a0e879bf-efe2-491d-aea4-ab175022e94a[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a0e879bf-efe2-491d-aea4-ab175022e94a[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;31m❌ LLM Failed[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a0e879bf-efe2-491d-aea4-ab175022e94a[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;31m❌ LLM Failed[0m
+[?25h[31m╭─[0m[31m──────────────────────────────────────────────────[0m[31m LLM Error [0m[31m───────────────────────────────────────────────────[0m[31m─╮[0m
+[31m│[0m                                                                                                                  [31m│[0m
+[31m│[0m  [1;31m❌ LLM Call Failed[0m                                                                                              [31m│[0m
+[31m│[0m  [37mError: [0m[31mlitellm.AuthenticationError: AuthenticationError: OpenAIException - The api_key client option must be [0m   [31m│[0m
+[31m│[0m  [31mset either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable[0m               [31m│[0m
+[31m│[0m                                                                                                                  [31m│[0m
+[31m╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯[0m
+
+ERROR:root:LiteLLM call failed: litellm.AuthenticationError: AuthenticationError: OpenAIException - The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+[91m Error during LLM call: litellm.AuthenticationError: AuthenticationError: OpenAIException - The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable[00m
+[91m An unknown error occurred. Please check the details below.[00m
+[91m Error details: litellm.AuthenticationError: AuthenticationError: OpenAIException - The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable[00m
+[?25l[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;31m📋 Task: a0e879bf-efe2-491d-aea4-ab175022e94a[0m
+    [37mAssigned to: [0m[31mFinancial Analysis Expert[0m
+    [37mStatus: [0m[1;31m❌ Failed[0m
+    └── [1;31m❌ LLM Failed[0m
+[?25h[31m╭─[0m[31m─────────────────────────────────────────────────[0m[31m Task Failure [0m[31m─────────────────────────────────────────────────[0m[31m─╮[0m
+[31m│[0m                                                                                                                  [31m│[0m
+[31m│[0m  [1;31mTask Failed[0m                                                                                                     [31m│[0m
+[31m│[0m  [37mName: [0m[31ma0e879bf-efe2-491d-aea4-ab175022e94a[0m                                                                      [31m│[0m
+[31m│[0m  [37mAgent: [0m[31mFinancial Analysis Expert[0m                                                                                [31m│[0m
+[31m│[0m  [37mTool Args: [0m                                                                                                     [31m│[0m
+[31m│[0m                                                                                                                  [31m│[0m
+[31m│[0m                                                                                                                  [31m│[0m
+[31m╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯[0m
+
+[31m╭─[0m[31m─────────────────────────────────────────────────[0m[31m Crew Failure [0m[31m─────────────────────────────────────────────────[0m[31m─╮[0m
+[31m│[0m                                                                                                                  [31m│[0m
+[31m│[0m  [1;31mCrew Execution Failed[0m                                                                                           [31m│[0m
+[31m│[0m  [37mName: [0m[31mcrew[0m                                                                                                      [31m│[0m
+[31m│[0m  [37mID: [0m[31mf4639bbd-aa0b-42b8-b292-ad04bc0bb1d3[0m                                                                        [31m│[0m
+[31m│[0m  [37mTool Args: [0m                                                                                                     [31m│[0m
+[31m│[0m  [37mFinal Output: [0m                                                                                                  [31m│[0m
+[31m│[0m                                                                                                                  [31m│[0m
+[31m│[0m                                                                                                                  [31m│[0m
+[31m╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯[0m
+
+
+================================================================================
+🎯 ENHANCED MULTI-AGENT BENCHMARK RESULTS
+================================================================================
+📋 Experiment ID: exp_20250629_215214
+🔑 Config Hash: 9ab1bee69f35
+📊 Total Questions: 2
+✅ Correct Answers: 0
+🎯 Accuracy: 0.00%
+⏱️  Avg Time/Question: 0.00s
+💰 Total Cost: $0.0000
+💸 Avg Cost/Question: $0.0000
+❌ Failure Rate: 100.00%
+⏰ Total Benchmark Time: 0.1s
+
+🤖 AGENT PERFORMANCE BREAKDOWN:
+------------------------------------------------------------
+supervisor  : Success=0.00%, Time=0.00s, Cost=$0.0000
+extractor   : Success=0.00%, Time=0.00s, Cost=$0.0000
+calculator  : Success=0.00%, Time=0.00s, Cost=$0.0000
+validator   : Success=0.00%, Time=0.00s, Cost=$0.0000
+
+❓ QUESTION TYPE PERFORMANCE:
+------------------------------------------------------------
+lookup      : 0/2 (0.00%), Time=0.00s
+
+🚨 ERROR PATTERNS:
+----------------------------------------
+AuthenticationError: 2 occurrences
+
+📈 View results in dashboard: streamlit run scripts/dashboard.py
+================================================================================
+
+✅ Benchmark completed successfully!
+📊 Experiment ID: exp_20250629_215214
+🎯 Final Accuracy: 0.00%

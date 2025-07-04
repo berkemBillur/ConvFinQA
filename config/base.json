@@ -1,0 +1,109 @@
+{
+  "data": {
+    "dataset_path": "data/convfinqa_dataset.json",
+    "cache_dir": "cache/"
+  },
+  "evaluation": {
+    "tolerance": 0.001,
+    "quick_eval": {
+      "enabled": true,
+      "sample_size": 10
+    },
+    "comprehensive_eval": {
+      "enabled": true,
+      "detailed_analysis": true
+    },
+    "metrics": {
+      "accuracy": true,
+      "execution_time": true,
+      "cost_tracking": true
+    }
+  },
+  "dsl": {
+    "constants": {
+      "EPS": 1e-8,
+      "MAX_VALUE": 1e12
+    },
+    "timeout": 30
+  },
+  "logging": {
+    "level": "INFO",
+    "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    "file": "logs/app.log"
+  },
+  "four_agent_config": {
+    "supervisor_model": "gpt-4o-mini",
+    "supervisor_temperature": 0.1,
+    "extractor_model": "gpt-4o-mini",
+    "extractor_temperature": 0.0,
+    "calculator_model": "gpt-4o-mini",
+    "calculator_temperature": 0.1,
+    "validator_model": "gpt-4o-mini",
+    "validator_temperature": 0.0,
+    "verbose": true,
+    "memory": true,
+    "cache": true,
+    "max_execution_time": 300,
+    "process_type": "sequential"
+  },
+  "three_agent_config": {
+    "expert_model": "gpt-4o",
+    "expert_temperature": 0.1,
+    "extraction_critic_model": "gpt-4o",
+    "extraction_critic_temperature": 0.0,
+    "calculation_critic_model": "gpt-4o",
+    "calculation_critic_temperature": 0.0,
+    "max_iterations": 2,
+    "enable_post_processing": true,
+    "verbose": true,
+    "number_extraction": {
+      "enabled": true,
+      "remove_commas": true,
+      "prefer_largest_number": true
+    }
+  },
+  "six_agent_config": {
+    "manager_model": "gpt-4o-mini",
+    "manager_temperature": 0.2,
+    "extractor_model": "gpt-4o-mini",
+    "extractor_temperature": 0.35,
+    "reasoner_model": "gpt-4o",
+    "reasoner_temperature": 0.5,
+    "extraction_critic_model": "gpt-4o-mini",
+    "extraction_critic_temperature": 0.2,
+    "calculation_critic_model": "gpt-4o-mini",
+    "calculation_critic_temperature": 0.2,
+    "synthesiser_model": "gpt-4o-mini",
+    "synthesiser_temperature": 0.3,
+    "max_iterations": 2,
+    "enable_post_processing": true,
+    "verbose": true,
+    "cache_enabled": true,
+    "number_extraction": {
+      "enabled": true,
+      "remove_commas": true,
+      "prefer_largest_number": true,
+      "exclude_years": true,
+      "convert_percentage_to_decimal": false
+    }
+  },
+  "models": {
+    "default_type": "multi_agent",
+    "use_six_agents": false,
+    "baseline": {
+      "enabled": true
+    },
+    "hybrid_keyword": {
+      "enabled": false
+    },
+    "multi_agent": {
+      "enabled": true
+    }
+  },
+  "experiments": {
+    "results_dir": "experiment_tracking/results/",
+    "save_predictions": true,
+    "save_intermediate": false,
+    "config_hash_prefix": "three_agent_paper_v1"
+  }
+} 

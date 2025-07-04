@@ -1,0 +1,73 @@
+Example ConvFinQA Chatbot Conversations
+
+1.
+uv run main chat Single_VRTX/2005/page_103.pdf-1
+what was the total revenue in 2003?
+how does that compare to 2002?
+what was the percentage increase?
+what factors contributed to this growth?
+
+2.
+uv run main chat Single_JKHY/2009/page_28.pdf-3
+what was the operating cash flow in 2009?
+how much did it change from 2008?
+express that as a percentage
+what was the trend over the past 3 years?
+
+3.
+uv run main chat Single_MSFT/2008/page_44.pdf-1
+what were the total operating expenses?
+how much did R&D expenses increase?
+what percentage of total expenses was R&D?
+how does this compare to the previous year?
+
+4.
+uv run main chat Single_AAPL/2010/page_42.pdf-2
+what was the gross profit?
+what was the revenue?
+calculate the gross margin percentage
+how did this change from last year?
+
+5.
+uv run main chat Double_IBM/2007/page_33.pdf
+what was the total assets value?
+what about total liabilities?
+calculate the debt-to-equity ratio
+how has this changed since last year?
+
+6.
+uv run main chat Single_GOOGL/2012/page_55.pdf-1
+what was the net income this year?
+what was it last year?
+calculate the growth rate
+is this higher than the industry average?
+
+7.
+uv run main chat Double_AMZN/2011/page_42.pdf
+what was the operating income?
+what was the operating margin?
+how does that compare to last quarter?
+what drove the change?
+
+8.
+uv run main chat Single_INTC/2009/page_37.pdf-2
+what was the capital expenditure?
+how much did it increase from last year?
+what percentage of revenue was this?
+was this higher than planned?
+
+9.
+uv run main chat Double_CSCO/2010/page_29.pdf
+what was the current ratio?
+how does that compare to last year?
+is this above the industry average?
+what's driving this change?
+
+10.
+uv run main chat Single_ORCL/2008/page_51.pdf-1
+what was the earnings per share?
+how much did it grow from last year?
+what was the P/E ratio?
+how does this compare to competitors?
+
+Note: Type 'exit' or 'quit' to end a conversation.

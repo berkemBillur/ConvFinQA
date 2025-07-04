@@ -1,0 +1,17 @@
+ConvFinQA CrewAI Benchmark - Failed Results
+================================================================================
+
+1. Record: Single_AMT/2005/page_105.pdf-4, Turn 0/2
+Question: "what was the total value of net operating loss carryforwards?"
+Expected: 4575515.0
+CrewAI Prediction: The total value of net operating loss carryforwards, including both federal and state amounts, is 4,575,515.0
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 28.3s
+Estimated Cost: $0.0283
+Configuration: three_agent_paper_v1_-7555106492134167785
+Confidence: 1.000
+DSL Program: 
+Operation: lookup
+--------------------------------------------------------------------------------
+

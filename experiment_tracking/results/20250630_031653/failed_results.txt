@@ -1,0 +1,227 @@
+ConvFinQA CrewAI Benchmark - Failed Results
+================================================================================
+
+1. Record: Double_MAS/2018/page_60.pdf, Turn 0/4
+Question: "what was the purchase price, net of what cash was acquired?"
+Expected: 102.0
+CrewAI Prediction: 549
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 9.7s
+Estimated Cost: $0.0097
+Configuration: three_agent_paper_v1_1859206111614672394
+Confidence: 1.000
+DSL Program: 
+Operation: lookup
+--------------------------------------------------------------------------------
+
+2. Record: Double_MAS/2018/page_60.pdf, Turn 1/4
+Question: "and including the impact of inventories?"
+Expected: 268.0
+CrewAI Prediction: -7.0
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 4.3s
+Estimated Cost: $0.0043
+Configuration: three_agent_paper_v1_1859206111614672394
+Confidence: 1.000
+DSL Program: 
+Operation: other
+--------------------------------------------------------------------------------
+
+3. Record: Double_MAS/2018/page_60.pdf, Turn 2/4
+Question: "and prepaid expenses and other?"
+Expected: 273.0
+CrewAI Prediction: 5.0
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 2.9s
+Estimated Cost: $0.0029
+Configuration: three_agent_paper_v1_1859206111614672394
+Confidence: 1.000
+DSL Program: 
+Operation: other
+--------------------------------------------------------------------------------
+
+4. Record: Single_IPG/2008/page_93.pdf-3, Turn 0/5
+Question: "what is the total of estimated future contingent acquisition obligations payable in cash in 2009?"
+Expected: 76.7
+CrewAI Prediction: 79.3
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 3.9s
+Estimated Cost: $0.0039
+Configuration: three_agent_paper_v1_1859206111614672394
+Confidence: 1.000
+DSL Program: 
+Operation: lookup
+--------------------------------------------------------------------------------
+
+5. Record: Single_IPG/2008/page_93.pdf-3, Turn 1/5
+Question: "what is it in 2013?"
+Expected: 75.6
+CrewAI Prediction: 75.9
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 5.6s
+Estimated Cost: $0.0056
+Configuration: three_agent_paper_v1_1859206111614672394
+Confidence: 1.000
+DSL Program: 
+Operation: lookup
+--------------------------------------------------------------------------------
+
+6. Record: Single_IPG/2008/page_93.pdf-3, Turn 2/5
+Question: "what is the net change?"
+Expected: 1.1
+CrewAI Prediction: -3.4
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 3.2s
+Estimated Cost: $0.0032
+Configuration: three_agent_paper_v1_1859206111614672394
+Confidence: 1.000
+DSL Program: 
+Operation: calculation
+--------------------------------------------------------------------------------
+
+7. Record: Single_IPG/2008/page_93.pdf-3, Turn 3/5
+Question: "what is the net change over the 2013 value?"
+Expected: 0.01434
+CrewAI Prediction: -3.4
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 12.7s
+Estimated Cost: $0.0127
+Configuration: three_agent_paper_v1_1859206111614672394
+Confidence: 1.000
+DSL Program: 
+Operation: calculation
+--------------------------------------------------------------------------------
+
+8. Record: Single_IPG/2008/page_93.pdf-3, Turn 4/5
+Question: "what is that times 100?"
+Expected: 1.43416
+CrewAI Prediction: -340
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 10.8s
+Estimated Cost: $0.0108
+Configuration: three_agent_paper_v1_1859206111614672394
+Confidence: 1.000
+DSL Program: 
+Operation: lookup
+--------------------------------------------------------------------------------
+
+9. Record: Single_AES/2002/page_46.pdf-2, Turn 0/2
+Question: "what is the sum of the high and low stock price for the second quarter 2002?"
+Expected: 12.72
+CrewAI Prediction: 92.20
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 19.8s
+Estimated Cost: $0.0198
+Configuration: three_agent_paper_v1_1859206111614672394
+Confidence: 1.000
+DSL Program: 
+Operation: lookup
+--------------------------------------------------------------------------------
+
+10. Record: Single_AES/2002/page_46.pdf-2, Turn 1/2
+Question: "what is that divided by 2?"
+Expected: 6.36
+CrewAI Prediction: 46.10
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 13.2s
+Estimated Cost: $0.0132
+Configuration: three_agent_paper_v1_1859206111614672394
+Confidence: 1.000
+DSL Program: 
+Operation: lookup
+--------------------------------------------------------------------------------
+
+11. Record: Double_GPN/2009/page_70.pdf, Turn 1/4
+Question: "and considering its amortization period, what was their average annual amortization expense?"
+Expected: 103.1
+CrewAI Prediction: Amortization period not specified
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 17.8s
+Estimated Cost: $0.0178
+Configuration: three_agent_paper_v1_1859206111614672394
+Confidence: 1.000
+DSL Program: 
+Operation: lookup
+--------------------------------------------------------------------------------
+
+12. Record: Single_UNP/2014/page_35.pdf-4, Turn 1/4
+Question: "and in 2013?"
+Expected: 6823.0
+CrewAI Prediction: 369.0
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 16.5s
+Estimated Cost: $0.0165
+Configuration: three_agent_paper_v1_1859206111614672394
+Confidence: 1.000
+DSL Program: 
+Operation: other
+--------------------------------------------------------------------------------
+
+13. Record: Single_UNP/2014/page_35.pdf-4, Turn 2/4
+Question: "so what was the difference between these years?"
+Expected: 562.0
+CrewAI Prediction: -844.0
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 23.1s
+Estimated Cost: $0.0231
+Configuration: three_agent_paper_v1_1859206111614672394
+Confidence: 1.000
+DSL Program: 
+Operation: calculation
+--------------------------------------------------------------------------------
+
+14. Record: Single_TSCO/2017/page_31.pdf-1, Turn 2/4
+Question: "what is the net change?"
+Expected: 74.14
+CrewAI Prediction: 80.52
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 17.2s
+Estimated Cost: $0.0172
+Configuration: three_agent_paper_v1_1859206111614672394
+Confidence: 1.000
+DSL Program: 
+Operation: calculation
+--------------------------------------------------------------------------------
+
+15. Record: Single_TSCO/2017/page_31.pdf-1, Turn 3/4
+Question: "what is that change over 100?"
+Expected: 0.7414
+CrewAI Prediction: 0.8052
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 8.6s
+Estimated Cost: $0.0086
+Configuration: three_agent_paper_v1_1859206111614672394
+Confidence: 1.000
+DSL Program: 
+Operation: calculation
+--------------------------------------------------------------------------------
+
+16. Record: Double_AES/2015/page_117.pdf, Turn 1/2
+Question: "and what was this percentage change from 2007 to 2008?"
+Expected: 0.39282
+CrewAI Prediction: Data not available
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 18.7s
+Estimated Cost: $0.0187
+Configuration: three_agent_paper_v1_1859206111614672394
+Confidence: 1.000
+DSL Program: 
+Operation: calculation
+--------------------------------------------------------------------------------
+

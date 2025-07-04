@@ -1,0 +1,73 @@
+ConvFinQA CrewAI Benchmark - Passed Results
+================================================================================
+
+1. Record: Single_MRO/2007/page_134.pdf-1, Turn 0/5
+Question: "what was the weighted average exercise price per share in 2007?"
+Expected: 60.94
+CrewAI Prediction: 60.94
+Status: ✓ CORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 5.2s
+Estimated Cost: $0.0052
+Configuration: 57a46d1e
+Confidence: 1.000
+DSL Program: 
+Operation: lookup
+--------------------------------------------------------------------------------
+
+2. Record: Single_MRO/2007/page_134.pdf-1, Turn 1/5
+Question: "and what was it in 2005?"
+Expected: 25.14
+CrewAI Prediction: 25.14
+Status: ✓ CORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 4.9s
+Estimated Cost: $0.0049
+Configuration: 57a46d1e
+Confidence: 1.000
+DSL Program: 
+Operation: lookup
+--------------------------------------------------------------------------------
+
+3. Record: Single_MRO/2007/page_134.pdf-1, Turn 2/5
+Question: "what was, then, the change over the years?"
+Expected: 35.8
+CrewAI Prediction: 35.80
+Status: ✓ CORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 4.3s
+Estimated Cost: $0.0055
+Configuration: 57a46d1e
+Confidence: 1.000
+DSL Program: 
+Operation: calculation
+--------------------------------------------------------------------------------
+
+4. Record: Single_MRO/2007/page_134.pdf-1, Turn 3/5
+Question: "what was the weighted average exercise price per share in 2005?"
+Expected: 25.14
+CrewAI Prediction: 25.14
+Status: ✓ CORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 4.0s
+Estimated Cost: $0.0040
+Configuration: 57a46d1e
+Confidence: 1.000
+DSL Program: 
+Operation: lookup
+--------------------------------------------------------------------------------
+
+5. Record: Single_MRO/2007/page_134.pdf-1, Turn 4/5
+Question: "and how much does that change represent in relation to this 2005 weighted average exercise price?"
+Expected: 1.42403
+CrewAI Prediction: 1.42403
+Status: ✓ CORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 4.0s
+Estimated Cost: $0.0040
+Configuration: 57a46d1e
+Confidence: 1.000
+DSL Program: 
+Operation: calculation
+--------------------------------------------------------------------------------
+

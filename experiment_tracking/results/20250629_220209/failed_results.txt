@@ -1,0 +1,17 @@
+ConvFinQA CrewAI Benchmark - Failed Results
+================================================================================
+
+1. Record: Single_AMT/2005/page_105.pdf-4, Turn 0/2
+Question: "what was the total value of net operating loss carryforwards?"
+Expected: 4575515.0
+CrewAI Prediction: 2418012.0
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 13.7s
+Estimated Cost: $0.0137
+Configuration: three_agent_paper_v1_-4770981040313423657
+Confidence: 1.000
+DSL Program: 
+Operation: lookup
+--------------------------------------------------------------------------------
+

@@ -1,0 +1,129 @@
+ConvFinQA CrewAI Benchmark - Failed Results
+================================================================================
+
+1. Record: Double_PM/2017/page_38.pdf, Turn 3/7
+Question: "and in the previous year, what was the decline in the net earnings, also in millions?"
+Expected: 932.0
+CrewAI Prediction: N/A
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 11.5s
+Estimated Cost: $0.0115
+Configuration: three_agent_paper_v1_-2039043247641819300
+Confidence: 1.000
+DSL Program: 
+Operation: lookup
+--------------------------------------------------------------------------------
+
+2. Record: Double_PM/2017/page_38.pdf, Turn 4/7
+Question: "what is that as a percentage of the 2015 net earnings?"
+Expected: 0.134
+CrewAI Prediction: N/A
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 4.3s
+Estimated Cost: $0.0043
+Configuration: three_agent_paper_v1_-2039043247641819300
+Confidence: 1.000
+DSL Program: 
+Operation: lookup
+--------------------------------------------------------------------------------
+
+3. Record: Double_PM/2017/page_38.pdf, Turn 5/7
+Question: "what, then, can be concluded to have been those 2015 earnings, in millions?"
+Expected: 6955.22388
+CrewAI Prediction: N/A
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 3.6s
+Estimated Cost: $0.0047
+Configuration: three_agent_paper_v1_-2039043247641819300
+Confidence: 1.000
+DSL Program: 
+Operation: other
+--------------------------------------------------------------------------------
+
+4. Record: Double_PM/2017/page_38.pdf, Turn 6/7
+Question: "and what is that in billions?"
+Expected: 6.95522
+CrewAI Prediction: 0.688
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 11.0s
+Estimated Cost: $0.0110
+Configuration: three_agent_paper_v1_-2039043247641819300
+Confidence: 1.000
+DSL Program: 
+Operation: lookup
+--------------------------------------------------------------------------------
+
+5. Record: Single_UNP/2014/page_75.pdf-3, Turn 0/5
+Question: "what was the total expense for repairs and maintenance incurred in 2013?"
+Expected: 2.3
+CrewAI Prediction: Data not available
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 5.8s
+Estimated Cost: $0.0058
+Configuration: three_agent_paper_v1_-2039043247641819300
+Confidence: 1.000
+DSL Program: 
+Operation: lookup
+--------------------------------------------------------------------------------
+
+6. Record: Single_UNP/2014/page_75.pdf-3, Turn 1/5
+Question: "and in 2012?"
+Expected: 2.1
+CrewAI Prediction: Data not available
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 15.7s
+Estimated Cost: $0.0157
+Configuration: three_agent_paper_v1_-2039043247641819300
+Confidence: 1.000
+DSL Program: 
+Operation: other
+--------------------------------------------------------------------------------
+
+7. Record: Single_UNP/2014/page_75.pdf-3, Turn 2/5
+Question: "what was the difference between the two values?"
+Expected: 0.2
+CrewAI Prediction: 74.0
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 8.3s
+Estimated Cost: $0.0083
+Configuration: three_agent_paper_v1_-2039043247641819300
+Confidence: 1.000
+DSL Program: 
+Operation: calculation
+--------------------------------------------------------------------------------
+
+8. Record: Single_UNP/2014/page_75.pdf-3, Turn 3/5
+Question: "and the specific value for 2012 again?"
+Expected: 2.1
+CrewAI Prediction: Data not available
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 7.3s
+Estimated Cost: $0.0073
+Configuration: three_agent_paper_v1_-2039043247641819300
+Confidence: 1.000
+DSL Program: 
+Operation: other
+--------------------------------------------------------------------------------
+
+9. Record: Single_UNP/2014/page_75.pdf-3, Turn 4/5
+Question: "so what was the percentage change of this value?"
+Expected: 0.09524
+CrewAI Prediction: 0.092037
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 18.7s
+Estimated Cost: $0.0187
+Configuration: three_agent_paper_v1_-2039043247641819300
+Confidence: 1.000
+DSL Program: 
+Operation: calculation
+--------------------------------------------------------------------------------
+

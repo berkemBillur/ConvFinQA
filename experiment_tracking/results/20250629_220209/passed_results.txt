@@ -1,0 +1,17 @@
+ConvFinQA CrewAI Benchmark - Passed Results
+================================================================================
+
+1. Record: Single_AMT/2005/page_105.pdf-4, Turn 1/2
+Question: "and how much do the net operating loss carryforwards related to state represent in relation to this total?"
+Expected: 0.52847
+CrewAI Prediction: 0.5284
+Status: ✓ CORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 17.4s
+Estimated Cost: $0.0209
+Configuration: three_agent_paper_v1_-4770981040313423657
+Confidence: 1.000
+DSL Program: 
+Operation: lookup
+--------------------------------------------------------------------------------
+

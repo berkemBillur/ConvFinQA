@@ -1,0 +1,554 @@
+📝 Command output will be saved to: results/multi_agent/20250628_142254/command_output_20250628_142254.txt
+Loaded 3458 conversations
+Parsed 3037 records for train split
+Parsed 421 records for dev split
+Failed to capture current prompts: attempted relative import with no known parent package
+Could not capture prompt version: attempted relative import with no known parent package
+[36m╭─[0m[36m─────────────────────────────────────────────────────────────[0m[36m Crew Execution Started [0m[36m──────────────────────────────────────────────────────────────[0m[36m─╮[0m
+[36m│[0m                                                                                                                                                     [36m│[0m
+[36m│[0m  [1;36mCrew Execution Started[0m                                                                                                                             [36m│[0m
+[36m│[0m  [37mName: [0m[36mcrew[0m                                                                                                                                         [36m│[0m
+[36m│[0m  [37mID: [0m[36mf0b45b79-fe98-4aa3-931d-db2ba53815b9[0m                                                                                                           [36m│[0m
+[36m│[0m  [37mTool Args: [0m                                                                                                                                        [36m│[0m
+[36m│[0m                                                                                                                                                     [36m│[0m
+[36m│[0m                                                                                                                                                     [36m│[0m
+[36m╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯[0m
+
+[?25l[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+[?25h[35m╭─[0m[35m────────────────────────────────────────────────────────────────[0m[35m 🤖 Agent Started [0m[35m─────────────────────────────────────────────────────────────────[0m[35m─╮[0m
+[35m│[0m                                                                                                                                                     [35m│[0m
+[35m│[0m  [37mAgent: [0m[1;92mFinancial Data Extraction Specialist[0m                                                                                                        [35m│[0m
+[35m│[0m                                                                                                                                                     [35m│[0m
+[35m│[0m  [37mTask: [0m                                                                                                                                             [35m│[0m
+[35m│[0m  [92mCRITICAL: Extract ALL relevant numbers for this question with precise metric identification.[0m                                                       [35m│[0m
+[35m│[0m                                                                                                                                                     [35m│[0m
+[35m│[0m  [92m🎯 INTELLIGENT KPI MATCHING SUGGESTIONS:[0m                                                                                                           [35m│[0m
+[35m│[0m  [92m'the square footage of major facilities was owned' → 'total facilities' (confidence: 0.35, type: contextual)[0m                                       [35m│[0m
+[35m│[0m                                                                                                                                                     [35m│[0m
+[35m│[0m  [92mENHANCED EXTRACTION STRATEGY:[0m                                                                                                                      [35m│[0m
+[35m│[0m  [92m1. EXACT MATCHING: Look for precise term matches first[0m                                                                                             [35m│[0m
+[35m│[0m  [92m2. SYNONYM MATCHING: Use financial domain knowledge (e.g., "repair" = "repairs and maintenance")  [0m                                                 [35m│[0m
+[35m│[0m  [92m3. FUZZY MATCHING: Use similarity scoring for slight variations[0m                                                                                    [35m│[0m
+[35m│[0m  [92m4. CONTEXTUAL MATCHING: Consider question context for ambiguous cases[0m                                                                              [35m│[0m
+[35m│[0m                                                                                                                                                     [35m│[0m
+[35m│[0m  [92mMETRIC DISAMBIGUATION RULES:[0m                                                                                                                       [35m│[0m
+[35m│[0m  [92m- Pay attention to EXACT wording: "net earnings" ≠ "operating income" ≠ "revenue"[0m                                                                  [35m│[0m
+[35m│[0m  [92m- Look for MULTIPLE similar metrics and distinguish carefully[0m                                                                                      [35m│[0m
+[35m│[0m  [92m- Prioritize suggested matches above, but verify they make sense[0m                                                                                   [35m│[0m
+[35m│[0m  [92m- Search ENTIRE table, not just first few rows[0m                                                                                                     [35m│[0m
+[35m│[0m                                                                                                                                                     [35m│[0m
+[35m│[0m  [92mFUZZY MATCHING FALLBACKS: If suggested matches don't work:[0m                                                                                         [35m│[0m
+[35m│[0m  [92m- Partial matches: "repair" matches "repairs and maintenance"[0m                                                                                      [35m│[0m
+[35m│[0m  [92m- Different formatting: "2,300" vs "2.3" (in millions)[0m                                                                                             [35m│[0m
+[35m│[0m  [92m- Similar terms: "expense" vs "costs" vs "expenditure"[0m                                                                                             [35m│[0m
+[35m│[0m  [92m- Contextual search: "decline in net earnings" → look for any earnings/income metrics[0m                                                              [35m│[0m
+[35m│[0m  [92m- ALWAYS find at least one number - extract ANY relevant financial metrics if specific ones missing[0m                                                [35m│[0m
+[35m│[0m                                                                                                                                                     [35m│[0m
+[35m│[0m  [92mReturn your answer as JSON exactly in this format:[0m                                                                                                 [35m│[0m
+[35m│[0m  [92m    {"candidates": [number1, number2, ...], "notes": "reasoning with EXACT metric names found and matching strategy used"}[0m                         [35m│[0m
+[35m│[0m  [92mDo NOT call external tools. Extract numbers directly from the document text and table above.[0m                                                       [35m│[0m
+[35m│[0m                                                                                                                                                     [35m│[0m
+[35m│[0m  [92mQUESTION: "as of december 28, 2013, what percentage of the square footage of major facilities was owned?"[0m                                          [35m│[0m
+[35m│[0m                                                                                                                                                     [35m│[0m
+[35m│[0m  [92mCONVERSATION HISTORY:[0m                                                                                                                              [35m│[0m
+[35m│[0m  [92mNo previous turns.[0m                                                                                                                                 [35m│[0m
+[35m│[0m                                                                                                                                                     [35m│[0m
+[35m│[0m  [92mDOCUMENT:[0m                                                                                                                                          [35m│[0m
+[35m│[0m  [92mPRE-TEXT:[0m                                                                                                                                          [35m│[0m
+[35m│[0m  [92mitem 1b . unresolved staff comments not applicable . item 2 . properties as of december 28 , 2013 , our major facilities consisted of : ( square [0m  [35m│[0m
+[35m│[0m  [92mfeet in millions ) united states countries total owned facilities1 29.9 16.7 46.6 leased facilities2 2.3 6.0 8.3 ....[0m                              [35m│[0m
+[35m│[0m                                                                                                                                                     [35m│[0m
+[35m│[0m  [92mTABLE:[0m                                                                                                                                             [35m│[0m
+[35m│[0m  [92mRow Label       [0m[92munitedstates    [0m[92mothercountries  [0m[92mtotal[0m                                                                                              [35m│[0m
+[35m│[0m  [92mleased facilities2      [0m[92m2.3     [0m[92m6.0     [0m[92m8.3[0m                                                                                                        [35m│[0m
+[35m│[0m  [92mowned facilities1       [0m[92m29.9    [0m[92m16.7    [0m[92m46.6[0m                                                                                                       [35m│[0m
+[35m│[0m  [92mtotal facilities        [0m[92m32.2    [0m[92m22.7    [0m[92m54.9[0m                                                                                                       [35m│[0m
+[35m│[0m                                                                                                                                                     [35m│[0m
+[35m│[0m                                                                                                                                                     [35m│[0m
+[35m╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯[0m
+
+[?25l[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K
+[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m[2K[1A[2K[1A[2K[1A[2K🛑 Interrupted by signal 2. Saving logs...
+[1;36m🚀 Crew: [0m[1;36mcrew[0m
+└── [1;33m📋 Task: a2e6475b-2a68-491d-840a-6f4ebc983c94[0m
+    [37mStatus: [0m[2;33mExecuting Task...[0m
+    └── [1;34m🧠 [0m[34mThinking...[0m

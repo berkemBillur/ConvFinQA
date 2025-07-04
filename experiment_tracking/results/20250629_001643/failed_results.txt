@@ -1,0 +1,73 @@
+ConvFinQA CrewAI Benchmark - Failed Results
+================================================================================
+
+1. Record: Single_ETR/2017/page_26.pdf-1, Turn 2/3
+Question: "so what was the percentage change over these years?"
+Expected: 0.08042
+CrewAI Prediction: 0.07440000000000001
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 14.6s
+Estimated Cost: $0.0146
+Configuration: three_agent_paper_v1_-8003325412554863117
+Confidence: 1.000
+DSL Program: 
+Operation: calculation
+--------------------------------------------------------------------------------
+
+2. Record: Double_AES/2016/page_191.pdf, Turn 2/6
+Question: "by how much, then, did it change over the year?"
+Expected: -21.0
+CrewAI Prediction: -4.0
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 11.5s
+Estimated Cost: $0.0149
+Configuration: three_agent_paper_v1_-8003325412554863117
+Confidence: 1.000
+DSL Program: 
+Operation: calculation
+--------------------------------------------------------------------------------
+
+3. Record: Double_AES/2016/page_191.pdf, Turn 3/6
+Question: "and how much did this change represent in relation to the 2014 total, in percentage?"
+Expected: -0.0533
+CrewAI Prediction: 0.0533
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 16.2s
+Estimated Cost: $0.0162
+Configuration: three_agent_paper_v1_-8003325412554863117
+Confidence: 1.000
+DSL Program: 
+Operation: calculation
+--------------------------------------------------------------------------------
+
+4. Record: Double_AES/2016/page_191.pdf, Turn 5/6
+Question: "what is this change as a percentage of the 2015 unrecognized tax benefits?"
+Expected: -0.01072
+CrewAI Prediction: 0.01072
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 11.7s
+Estimated Cost: $0.0117
+Configuration: three_agent_paper_v1_-8003325412554863117
+Confidence: 1.000
+DSL Program: 
+Operation: calculation
+--------------------------------------------------------------------------------
+
+5. Record: Single_ADI/2011/page_50.pdf-1, Turn 1/2
+Question: "what percentage change does this represent?"
+Expected: -0.65932
+CrewAI Prediction: 0.516
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 11.5s
+Estimated Cost: $0.0115
+Configuration: three_agent_paper_v1_-8003325412554863117
+Confidence: 1.000
+DSL Program: 
+Operation: calculation
+--------------------------------------------------------------------------------
+

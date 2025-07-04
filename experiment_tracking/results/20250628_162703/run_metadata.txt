@@ -1,0 +1,31 @@
+CrewAI Benchmark - Run Metadata
+================================================================================
+
+RUN PARAMETERS:
+----------------------------------------
+Timestamp: 2025-06-28 16:27:40
+Configuration Hash: f366f0818a76
+Agent Models: supervisor(gpt-4o), extractor(gpt-4o-mini), calculator(gpt-4o), validator(gpt-4o-mini)
+Conversations evaluated: 2
+Sampling strategy: Deterministic
+Total questions: 9
+Passed questions: 5
+Failed questions: 4
+
+PERFORMANCE SUMMARY:
+----------------------------------------
+CrewAI Multi-Agent: 55.6%
+Target Achievement: PASS (Target: 45.0%)
+
+COST ANALYSIS:
+----------------------------------------
+Total cost: $0.04
+Cost per question: $0.0043
+Cost per conversation: $0.0192
+Agent breakdown: Supervisor($0.01), Calculator($0.02), Extractor($0.01), Validator($0.01)
+
+CONFIGURATION DETAILS:
+----------------------------------------
+Performance tracking enabled: Yes
+Tracking data location: experiments/tracking/
+Configuration fingerprint: f366f0818a76

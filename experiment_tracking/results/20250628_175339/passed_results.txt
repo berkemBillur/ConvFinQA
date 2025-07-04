@@ -1,0 +1,31 @@
+ConvFinQA CrewAI Benchmark - Passed Results
+================================================================================
+
+1. Record: Double_STT/2009/page_73.pdf, Turn 0/3
+Question: "what was the change in amortized cost in 2009?"
+Expected: 14057.0
+CrewAI Prediction: 14057.0
+Status: ✓ CORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 6.8s
+Estimated Cost: $0.0068
+Configuration: multi_agent_v2_-7803941238793460859
+Confidence: 1.000
+DSL Program: 
+Operation: calculation
+--------------------------------------------------------------------------------
+
+2. Record: Double_STT/2009/page_73.pdf, Turn 2/3
+Question: "what is the amortized cost as a percentage of the fair value of securities in 2009?"
+Expected: 1.02949
+CrewAI Prediction: 1.0290000000000001
+Status: ✓ CORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 4.5s
+Estimated Cost: $0.0045
+Configuration: multi_agent_v2_-7803941238793460859
+Confidence: 1.000
+DSL Program: 
+Operation: lookup
+--------------------------------------------------------------------------------
+

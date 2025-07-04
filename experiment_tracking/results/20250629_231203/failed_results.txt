@@ -1,0 +1,245 @@
+ConvFinQA CrewAI Benchmark - Failed Results
+================================================================================
+
+1. Record: Single_AMT/2005/page_105.pdf-4, Turn 0/2
+Question: "what was the total value of net operating loss carryforwards?"
+Expected: 4575515.0
+CrewAI Prediction: ERROR
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 0.0s
+Estimated Cost: $0.0000
+Configuration: three_agent_paper_v1_8983230606508937595
+Confidence: 0.000
+Error: Invalid format specifier ' <true | false>,
+  "issues": ["<short issue 1>", "..."],
+  "suggested_fix": "<concise suggestion or empty string>"
+' for object of type 'str'
+DSL Program: 
+Operation: lookup
+Error Analysis: Invalid format specifier ' <true | false>,
+  "issues": ["<short issue 1>", "..."],
+  "suggested_fix": "<concise suggestion or empty string>"
+' for object of type 'str'
+--------------------------------------------------------------------------------
+
+2. Record: Single_AMT/2005/page_105.pdf-4, Turn 1/2
+Question: "and how much do the net operating loss carryforwards related to state represent in relation to this total?"
+Expected: 0.52847
+CrewAI Prediction: ERROR
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 0.0s
+Estimated Cost: $0.0000
+Configuration: three_agent_paper_v1_8983230606508937595
+Confidence: 0.000
+Error: Invalid format specifier ' <true | false>,
+  "issues": ["<short issue 1>", "..."],
+  "suggested_fix": "<concise suggestion or empty string>"
+' for object of type 'str'
+DSL Program: 
+Operation: lookup
+Error Analysis: Invalid format specifier ' <true | false>,
+  "issues": ["<short issue 1>", "..."],
+  "suggested_fix": "<concise suggestion or empty string>"
+' for object of type 'str'
+--------------------------------------------------------------------------------
+
+3. Record: Single_PM/2018/page_24.pdf-3, Turn 0/2
+Question: "what is the net change in the price for pmi common stock from 2013 to 2018?"
+Expected: -3.5
+CrewAI Prediction: ERROR
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 0.0s
+Estimated Cost: $0.0000
+Configuration: three_agent_paper_v1_8983230606508937595
+Confidence: 0.000
+Error: Invalid format specifier ' <true | false>,
+  "issues": ["<short issue 1>", "..."],
+  "suggested_fix": "<concise suggestion or empty string>"
+' for object of type 'str'
+DSL Program: 
+Operation: calculation
+Error Analysis: Invalid format specifier ' <true | false>,
+  "issues": ["<short issue 1>", "..."],
+  "suggested_fix": "<concise suggestion or empty string>"
+' for object of type 'str'
+--------------------------------------------------------------------------------
+
+4. Record: Single_PM/2018/page_24.pdf-3, Turn 1/2
+Question: "what is that change over 100?"
+Expected: -0.035
+CrewAI Prediction: ERROR
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 0.0s
+Estimated Cost: $0.0000
+Configuration: three_agent_paper_v1_8983230606508937595
+Confidence: 0.000
+Error: Invalid format specifier ' <true | false>,
+  "issues": ["<short issue 1>", "..."],
+  "suggested_fix": "<concise suggestion or empty string>"
+' for object of type 'str'
+DSL Program: 
+Operation: calculation
+Error Analysis: Invalid format specifier ' <true | false>,
+  "issues": ["<short issue 1>", "..."],
+  "suggested_fix": "<concise suggestion or empty string>"
+' for object of type 'str'
+--------------------------------------------------------------------------------
+
+5. Record: Double_PM/2017/page_38.pdf, Turn 0/7
+Question: "what was, in millions, the operating income in 2017?"
+Expected: 11503.0
+CrewAI Prediction: ERROR
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 0.0s
+Estimated Cost: $0.0000
+Configuration: three_agent_paper_v1_8983230606508937595
+Confidence: 0.000
+Error: Invalid format specifier ' <true | false>,
+  "issues": ["<short issue 1>", "..."],
+  "suggested_fix": "<concise suggestion or empty string>"
+' for object of type 'str'
+DSL Program: 
+Operation: lookup
+Error Analysis: Invalid format specifier ' <true | false>,
+  "issues": ["<short issue 1>", "..."],
+  "suggested_fix": "<concise suggestion or empty string>"
+' for object of type 'str'
+--------------------------------------------------------------------------------
+
+6. Record: Double_PM/2017/page_38.pdf, Turn 1/7
+Question: "and what was it in 2016?"
+Expected: 10815.0
+CrewAI Prediction: ERROR
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 0.0s
+Estimated Cost: $0.0000
+Configuration: three_agent_paper_v1_8983230606508937595
+Confidence: 0.000
+Error: Invalid format specifier ' <true | false>,
+  "issues": ["<short issue 1>", "..."],
+  "suggested_fix": "<concise suggestion or empty string>"
+' for object of type 'str'
+DSL Program: 
+Operation: lookup
+Error Analysis: Invalid format specifier ' <true | false>,
+  "issues": ["<short issue 1>", "..."],
+  "suggested_fix": "<concise suggestion or empty string>"
+' for object of type 'str'
+--------------------------------------------------------------------------------
+
+7. Record: Double_PM/2017/page_38.pdf, Turn 2/7
+Question: "what was, then, the change over the year, in millions?"
+Expected: 688.0
+CrewAI Prediction: ERROR
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 0.0s
+Estimated Cost: $0.0000
+Configuration: three_agent_paper_v1_8983230606508937595
+Confidence: 0.000
+Error: Invalid format specifier ' <true | false>,
+  "issues": ["<short issue 1>", "..."],
+  "suggested_fix": "<concise suggestion or empty string>"
+' for object of type 'str'
+DSL Program: 
+Operation: calculation
+Error Analysis: Invalid format specifier ' <true | false>,
+  "issues": ["<short issue 1>", "..."],
+  "suggested_fix": "<concise suggestion or empty string>"
+' for object of type 'str'
+--------------------------------------------------------------------------------
+
+8. Record: Double_PM/2017/page_38.pdf, Turn 3/7
+Question: "and in the previous year, what was the decline in the net earnings, also in millions?"
+Expected: 932.0
+CrewAI Prediction: ERROR
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 0.0s
+Estimated Cost: $0.0000
+Configuration: three_agent_paper_v1_8983230606508937595
+Confidence: 0.000
+Error: Invalid format specifier ' <true | false>,
+  "issues": ["<short issue 1>", "..."],
+  "suggested_fix": "<concise suggestion or empty string>"
+' for object of type 'str'
+DSL Program: 
+Operation: lookup
+Error Analysis: Invalid format specifier ' <true | false>,
+  "issues": ["<short issue 1>", "..."],
+  "suggested_fix": "<concise suggestion or empty string>"
+' for object of type 'str'
+--------------------------------------------------------------------------------
+
+9. Record: Double_PM/2017/page_38.pdf, Turn 4/7
+Question: "what is that as a percentage of the 2015 net earnings?"
+Expected: 0.134
+CrewAI Prediction: ERROR
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 0.0s
+Estimated Cost: $0.0000
+Configuration: three_agent_paper_v1_8983230606508937595
+Confidence: 0.000
+Error: Invalid format specifier ' <true | false>,
+  "issues": ["<short issue 1>", "..."],
+  "suggested_fix": "<concise suggestion or empty string>"
+' for object of type 'str'
+DSL Program: 
+Operation: lookup
+Error Analysis: Invalid format specifier ' <true | false>,
+  "issues": ["<short issue 1>", "..."],
+  "suggested_fix": "<concise suggestion or empty string>"
+' for object of type 'str'
+--------------------------------------------------------------------------------
+
+10. Record: Double_PM/2017/page_38.pdf, Turn 5/7
+Question: "what, then, can be concluded to have been those 2015 earnings, in millions?"
+Expected: 6955.22388
+CrewAI Prediction: ERROR
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 0.0s
+Estimated Cost: $0.0000
+Configuration: three_agent_paper_v1_8983230606508937595
+Confidence: 0.000
+Error: Invalid format specifier ' <true | false>,
+  "issues": ["<short issue 1>", "..."],
+  "suggested_fix": "<concise suggestion or empty string>"
+' for object of type 'str'
+DSL Program: 
+Operation: other
+Error Analysis: Invalid format specifier ' <true | false>,
+  "issues": ["<short issue 1>", "..."],
+  "suggested_fix": "<concise suggestion or empty string>"
+' for object of type 'str'
+--------------------------------------------------------------------------------
+
+11. Record: Double_PM/2017/page_38.pdf, Turn 6/7
+Question: "and what is that in billions?"
+Expected: 6.95522
+CrewAI Prediction: ERROR
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 0.0s
+Estimated Cost: $0.0000
+Configuration: three_agent_paper_v1_8983230606508937595
+Confidence: 0.000
+Error: Invalid format specifier ' <true | false>,
+  "issues": ["<short issue 1>", "..."],
+  "suggested_fix": "<concise suggestion or empty string>"
+' for object of type 'str'
+DSL Program: 
+Operation: lookup
+Error Analysis: Invalid format specifier ' <true | false>,
+  "issues": ["<short issue 1>", "..."],
+  "suggested_fix": "<concise suggestion or empty string>"
+' for object of type 'str'
+--------------------------------------------------------------------------------
+

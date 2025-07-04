@@ -1,0 +1,17 @@
+ConvFinQA CrewAI Benchmark - Failed Results
+================================================================================
+
+1. Record: Double_EW/2016/page_79.pdf, Turn 3/4
+Question: "and concerning that goodwill, what percentage does it represent in relation to the current assets?"
+Expected: 9.21352
+CrewAI Prediction: N/A
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 11.7s
+Estimated Cost: $0.0117
+Configuration: three_agent_paper_v1_1706815668585954386
+Confidence: 1.000
+DSL Program: 
+Operation: percentage
+--------------------------------------------------------------------------------
+

@@ -1,0 +1,59 @@
+ConvFinQA CrewAI Benchmark - Failed Results
+================================================================================
+
+1. Record: Double_HII/2017/page_104.pdf, Turn 0/4
+Question: "what was the change in the unamortized debt issuance costs associated with the senior notes between 2016 and 2017?"
+Expected: -4.0
+CrewAI Prediction: 1.0
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 4.5s
+Estimated Cost: $0.0054
+Configuration: multi_agent_v2_5270487544416272705
+Confidence: 1.000
+DSL Program: 
+Operation: calculation
+--------------------------------------------------------------------------------
+
+2. Record: Double_HII/2017/page_104.pdf, Turn 1/4
+Question: "so what was the percentage change during this time?"
+Expected: -0.21053
+CrewAI Prediction: -0.00037039999999999995
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 5.8s
+Estimated Cost: $0.0058
+Configuration: multi_agent_v2_5270487544416272705
+Confidence: 1.000
+DSL Program: 
+Operation: calculation
+--------------------------------------------------------------------------------
+
+3. Record: Double_HII/2017/page_104.pdf, Turn 2/4
+Question: "what was the change associated with credit facilities during that time?"
+Expected: 3.0
+CrewAI Prediction: 1.0
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 5.1s
+Estimated Cost: $0.0051
+Configuration: multi_agent_v2_5270487544416272705
+Confidence: 1.000
+DSL Program: 
+Operation: calculation
+--------------------------------------------------------------------------------
+
+4. Record: Double_HII/2017/page_104.pdf, Turn 3/4
+Question: "so what was the percentage change?"
+Expected: 0.375
+CrewAI Prediction: -0.00037039999999999995
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 4.0s
+Estimated Cost: $0.0040
+Configuration: multi_agent_v2_5270487544416272705
+Confidence: 1.000
+DSL Program: 
+Operation: calculation
+--------------------------------------------------------------------------------
+

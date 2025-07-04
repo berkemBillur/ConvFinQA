@@ -1,0 +1,241 @@
+ConvFinQA CrewAI Benchmark - Failed Results
+================================================================================
+
+1. Record: Single_CB/2010/page_88.pdf-1, Turn 0/5
+Question: "what was the net favorable prior period development in 2010?"
+Expected: 503.0
+CrewAI Prediction: -4.6
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 4.4s
+Estimated Cost: $0.0044
+Configuration: three_agent_paper_v1_-1322860856189001238
+Confidence: 1.000
+DSL Program: 
+Operation: lookup
+--------------------------------------------------------------------------------
+
+2. Record: Single_CB/2010/page_88.pdf-1, Turn 1/5
+Question: "and what was it in 2008?"
+Expected: 814.0
+CrewAI Prediction: -6.8
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 15.5s
+Estimated Cost: $0.0155
+Configuration: three_agent_paper_v1_-1322860856189001238
+Confidence: 1.000
+DSL Program: 
+Operation: lookup
+--------------------------------------------------------------------------------
+
+3. Record: Single_CB/2010/page_88.pdf-1, Turn 2/5
+Question: "what was, then, the change over the years?"
+Expected: -311.0
+CrewAI Prediction: 2.2
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 19.4s
+Estimated Cost: $0.0252
+Configuration: three_agent_paper_v1_-1322860856189001238
+Confidence: 1.000
+DSL Program: 
+Operation: calculation
+--------------------------------------------------------------------------------
+
+4. Record: Single_CB/2010/page_88.pdf-1, Turn 3/5
+Question: "what was the net favorable prior period development in 2008?"
+Expected: 814.0
+CrewAI Prediction: -6.8
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 3.4s
+Estimated Cost: $0.0034
+Configuration: three_agent_paper_v1_-1322860856189001238
+Confidence: 1.000
+DSL Program: 
+Operation: lookup
+--------------------------------------------------------------------------------
+
+5. Record: Single_CB/2010/page_88.pdf-1, Turn 4/5
+Question: "and how much does that change represent in relation to this 2008 amount, in percentage?"
+Expected: -0.38206
+CrewAI Prediction: 0.31914893617021284
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 17.8s
+Estimated Cost: $0.0178
+Configuration: three_agent_paper_v1_-1322860856189001238
+Confidence: 1.000
+DSL Program: 
+Operation: calculation
+--------------------------------------------------------------------------------
+
+6. Record: Single_PM/2018/page_31.pdf-1, Turn 0/5
+Question: "what is the pre-tax pension and postretirement expense in 2019?"
+Expected: 205.0
+CrewAI Prediction: Data unavailable
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 14.5s
+Estimated Cost: $0.0145
+Configuration: three_agent_paper_v1_-1322860856189001238
+Confidence: 1.000
+DSL Program: 
+Operation: lookup
+--------------------------------------------------------------------------------
+
+7. Record: Single_PM/2018/page_31.pdf-1, Turn 1/5
+Question: "and what is it in 2018?"
+Expected: 160.0
+CrewAI Prediction: -3.97
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 12.7s
+Estimated Cost: $0.0127
+Configuration: three_agent_paper_v1_-1322860856189001238
+Confidence: 1.000
+DSL Program: 
+Operation: lookup
+--------------------------------------------------------------------------------
+
+8. Record: Single_PM/2018/page_31.pdf-1, Turn 2/5
+Question: "what is, then, the change over the year?"
+Expected: 45.0
+CrewAI Prediction: -0.28
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 14.0s
+Estimated Cost: $0.0182
+Configuration: three_agent_paper_v1_-1322860856189001238
+Confidence: 1.000
+DSL Program: 
+Operation: calculation
+--------------------------------------------------------------------------------
+
+9. Record: Single_PM/2018/page_31.pdf-1, Turn 3/5
+Question: "what is the pre-tax pension and postretirement expense in 2018?"
+Expected: 160.0
+CrewAI Prediction: -5.58
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 3.9s
+Estimated Cost: $0.0039
+Configuration: three_agent_paper_v1_-1322860856189001238
+Confidence: 1.000
+DSL Program: 
+Operation: lookup
+--------------------------------------------------------------------------------
+
+10. Record: Single_PM/2018/page_31.pdf-1, Turn 4/5
+Question: "and how much does that change represent in relation to this 2018 expense, in percentage?"
+Expected: 0.28125
+CrewAI Prediction: 0.05017921146953405
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 16.8s
+Estimated Cost: $0.0168
+Configuration: three_agent_paper_v1_-1322860856189001238
+Confidence: 1.000
+DSL Program: 
+Operation: calculation
+--------------------------------------------------------------------------------
+
+11. Record: Single_AMAT/2013/page_18.pdf-1, Turn 0/2
+Question: "what was the change in rd&e spendings from 2013 to 2014?"
+Expected: 0.1
+CrewAI Prediction: 766.0
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 19.4s
+Estimated Cost: $0.0194
+Configuration: three_agent_paper_v1_-1322860856189001238
+Confidence: 1.000
+DSL Program: 
+Operation: calculation
+--------------------------------------------------------------------------------
+
+12. Record: Single_AMAT/2013/page_18.pdf-1, Turn 1/2
+Question: "and how much does this change represent in relation to those spendings in 2013, in percentage?"
+Expected: 0.08333
+CrewAI Prediction: 0.3229
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 13.9s
+Estimated Cost: $0.0139
+Configuration: three_agent_paper_v1_-1322860856189001238
+Confidence: 1.000
+DSL Program: 
+Operation: calculation
+--------------------------------------------------------------------------------
+
+13. Record: Single_AMT/2008/page_32.pdf-3, Turn 0/5
+Question: "what was the highest price of the company's share price for the quarter ended march 31, 2008?"
+Expected: 42.72
+CrewAI Prediction: 41.31
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 10.8s
+Estimated Cost: $0.0108
+Configuration: three_agent_paper_v1_-1322860856189001238
+Confidence: 1.000
+DSL Program: 
+Operation: lookup
+--------------------------------------------------------------------------------
+
+14. Record: Single_AMT/2008/page_32.pdf-3, Turn 1/5
+Question: "what was the lowest price?"
+Expected: 32.1
+CrewAI Prediction: 36.34
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 14.0s
+Estimated Cost: $0.0140
+Configuration: three_agent_paper_v1_-1322860856189001238
+Confidence: 1.000
+DSL Program: 
+Operation: lookup
+--------------------------------------------------------------------------------
+
+15. Record: Single_AMT/2008/page_32.pdf-3, Turn 2/5
+Question: "what is the net difference?"
+Expected: 10.62
+CrewAI Prediction: 4.68
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 10.7s
+Estimated Cost: $0.0107
+Configuration: three_agent_paper_v1_-1322860856189001238
+Confidence: 1.000
+DSL Program: 
+Operation: calculation
+--------------------------------------------------------------------------------
+
+16. Record: Single_AMT/2008/page_32.pdf-3, Turn 3/5
+Question: "what was the low price?"
+Expected: 32.1
+CrewAI Prediction: 36.34
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 12.4s
+Estimated Cost: $0.0124
+Configuration: three_agent_paper_v1_-1322860856189001238
+Confidence: 1.000
+DSL Program: 
+Operation: lookup
+--------------------------------------------------------------------------------
+
+17. Record: Single_AMT/2008/page_32.pdf-3, Turn 4/5
+Question: "what is the net difference over the low price?"
+Expected: 0.33084
+CrewAI Prediction: 0.1277
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 11.5s
+Estimated Cost: $0.0115
+Configuration: three_agent_paper_v1_-1322860856189001238
+Confidence: 1.000
+DSL Program: 
+Operation: calculation
+--------------------------------------------------------------------------------
+

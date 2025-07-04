@@ -1,0 +1,59 @@
+ConvFinQA CrewAI Benchmark - Failed Results
+================================================================================
+
+1. Record: Double_HII/2017/page_104.pdf, Turn 0/4
+Question: "what was the change in the unamortized debt issuance costs associated with the senior notes between 2016 and 2017?"
+Expected: -4.0
+CrewAI Prediction: 1.0
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 3.4s
+Estimated Cost: $0.0040
+Configuration: 57a46d1e
+Confidence: 1.000
+DSL Program: 
+Operation: calculation
+--------------------------------------------------------------------------------
+
+2. Record: Double_HII/2017/page_104.pdf, Turn 1/4
+Question: "so what was the percentage change during this time?"
+Expected: -0.21053
+CrewAI Prediction: 0.0384615
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 5.8s
+Estimated Cost: $0.0058
+Configuration: 57a46d1e
+Confidence: 1.000
+DSL Program: 
+Operation: calculation
+--------------------------------------------------------------------------------
+
+3. Record: Double_HII/2017/page_104.pdf, Turn 2/4
+Question: "what was the change associated with credit facilities during that time?"
+Expected: 3.0
+CrewAI Prediction: -1414.0
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 4.6s
+Estimated Cost: $0.0046
+Configuration: 57a46d1e
+Confidence: 1.000
+DSL Program: 
+Operation: calculation
+--------------------------------------------------------------------------------
+
+4. Record: Double_HII/2017/page_104.pdf, Turn 3/4
+Question: "so what was the percentage change?"
+Expected: 0.375
+CrewAI Prediction: 0.0384615
+Status: ✗ INCORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 3.8s
+Estimated Cost: $0.0038
+Configuration: 57a46d1e
+Confidence: 1.000
+DSL Program: 
+Operation: calculation
+--------------------------------------------------------------------------------
+

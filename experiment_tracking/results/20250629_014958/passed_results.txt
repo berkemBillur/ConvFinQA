@@ -1,0 +1,31 @@
+ConvFinQA CrewAI Benchmark - Passed Results
+================================================================================
+
+1. Record: Single_ETR/2017/page_316.pdf-1, Turn 0/2
+Question: "what is the sum of net revenues from 2016 and 2017?"
+Expected: 3043.1
+CrewAI Prediction: 3043.1
+Status: ✓ CORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 4.0s
+Estimated Cost: $0.0040
+Configuration: three_agent_paper_v1_-1322860856189001238
+Confidence: 1.000
+DSL Program: 
+Operation: lookup
+--------------------------------------------------------------------------------
+
+2. Record: Single_ETR/2017/page_316.pdf-1, Turn 1/2
+Question: "what is that divided by 2?"
+Expected: 1521.55
+CrewAI Prediction: 1521.55
+Status: ✓ CORRECT
+Agent Flow: supervisor → extractor → calculator → validator
+Execution Time: 11.6s
+Estimated Cost: $0.0116
+Configuration: three_agent_paper_v1_-1322860856189001238
+Confidence: 1.000
+DSL Program: 
+Operation: lookup
+--------------------------------------------------------------------------------
+

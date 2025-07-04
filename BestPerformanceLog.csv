@@ -1,0 +1,32 @@
+﻿,question,expected,prediction,correct,execution_time,cost
+0,and including the impact of inventories?,268.0,-7.0,false,4.3,0.0043
+1,and prepaid expenses and other?,273.0,5.0,false,2.9,0.0029
+2,what portion of the revised purchase price is dedicated to goodwill?,0.11658,0.11657559198542805,true,4.4,0.0044
+3,what is the total of estimated future contingent acquisition obligations payable in cash in 2009?,76.7,79.3,false,3.9,0.0039
+4,what is it in 2013?,75.6,75.9,false,5.6,0.0056
+5,what is the net change?,1.1,-3.4,false,3.2,0.0032
+6,what is the net change over the 2013 value?,0.01434,-3.4,false,12.7,0.0127
+7,what is that times 100?,1.43416,-340,false,10.8,0.0108
+8,what was the return for united parcel service inc . in 2006?,148.92,148.92,true,8.6,0.0086
+9,and what was the change in that return from 2001 to 2006?,48.92,48.92,true,3.2,0.0032
+10,"how much, then, does that change represent in relation to the return of that stock in 2001, in percentage?",0.4892,0.4892,true,15.7,0.0244
+11,what is the sum of the high and low stock price for the second quarter 2002?,12.72,92.20,false,19.8,0.0198
+12,what is that divided by 2?,6.36,46.10,false,13.2,0.0132
+13,"in the year of 2008, what were the preliminary purchase price allocations related to contract-based intangible assets, in thousands?",1031.0,1031.0,true,5.9,0.0071
+14,"and considering its amortization period, what was their average annual amortization expense?",103.1,Amortization period not specified,false,17.8,0.0178
+15,"and concerning the total assets in that same acquisition, what amount of them was due to goodwill?",13536.0,13536.0,true,7.1,0.0071
+16,"what percentage, then, did the goodwill represent in relation to them?",0.69676,0.6968,true,8.5,0.011
+17,"what is the value of the s&p 500 index on january 3, 2009 less it at the end of 2006?",-34.3,-34.3,true,7.7,0.0077
+18,what is that divided by 100?,-0.343,-0.343,true,17.2,0.0172
+19,what was the cash by operating activities for 2014?,7385.0,7385.0,true,5.6,0.0056
+20,and in 2013?,6823.0,369.0,false,16.5,0.0165
+21,so what was the difference between these years?,562.0,-844.0,false,23.1,0.0231
+22,and the percentage change over this time?,0.08237,0.08220000000000001,true,15.5,0.0155
+23,what is the net change fair value of forward exchange contracts asset from 2010 to 2011?,-4784.0,-4784.0,true,7.9,0.0079
+24,what percentage change does this represent?,-0.65932,-0.6594488188976377,true,18.5,0.0185
+25,what is the price of tractor supply company in 2013?,174.14,174.14,true,6.6,0.0066
+26,what is the price in 2012?,100.0,100.0,true,7.3,0.0073
+27,what is the net change?,74.14,80.52,false,17.2,0.0172
+28,what is that change over 100?,0.7414,0.8052,false,8.6,0.0086
+29,what percentage did the change in the proportional free cash flow from 2008 to 2009 represent in relation to that cash in 2008?,-0.29898,-0.299055071,true,21.1,0.0253
+30,and what was this percentage change from 2007 to 2008?,0.39282,Data not available,false,18.7,0.0187

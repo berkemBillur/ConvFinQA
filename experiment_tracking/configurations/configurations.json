@@ -1,0 +1,20 @@
+{
+  "57a46d1e": {
+    "supervisor_model": "gpt-4o",
+    "extractor_model": "gpt-4o-mini",
+    "calculator_model": "gpt-4o",
+    "validator_model": "gpt-4o-mini",
+    "supervisor_temp": 0.1,
+    "extractor_temp": 0.0,
+    "calculator_temp": 0.1,
+    "validator_temp": 0.0,
+    "process_type": "hierarchical",
+    "manager_model": "gpt-4o",
+    "memory_enabled": true,
+    "cache_enabled": true,
+    "verbose": true,
+    "max_execution_time": 300,
+    "config_hash": "57a46d1e",
+    "timestamp": "2025-06-26T22:15:27.637423"
+  }
+}
